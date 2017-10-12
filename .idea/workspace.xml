@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb347665-1787-4e8e-933b-f2ec244be73c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../PythonProject/CollectPicture/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../PythonProject/CollectPicture/collect.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../PythonProject/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../PythonProject/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
     </list>
     <ignored path="untitled2.iws" />
@@ -464,7 +461,14 @@
       <option name="project" value="LOCAL" />
       <updated>1507828597657</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="移动py文件">
+      <created>1507828723578</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1507828723578</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
