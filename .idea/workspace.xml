@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eb347665-1787-4e8e-933b-f2ec244be73c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../PythonProject/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../PythonProject/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    <list default="true" id="eb347665-1787-4e8e-933b-f2ec244be73c" name="Default" comment="添加text">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="untitled2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,12 +27,22 @@
     <favorites_list name="untitled2" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="collect.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../PythonProject/CollectPicture/MmCollect/collect.py">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="1.text" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CollectPicture/MmCollect/1.text">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="34" column="25" lean-forward="true" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="collect1.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CollectPicture/MmCollect/collect1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -48,7 +58,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../PythonProject/CollectPicture" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="PUSH_TAGS">
       <GitPushTagMode />
     </option>
@@ -58,6 +68,7 @@
       <list>
         <option value="$PROJECT_DIR$/mm/MmmCollect/collect.py" />
         <option value="$PROJECT_DIR$/../PythonProject/CollectPicture/collect.py" />
+        <option value="$PROJECT_DIR$/CollectPicture/MmCollect/1.text" />
       </list>
     </option>
   </component>
@@ -68,7 +79,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+    <option name="x" value="66" />
+    <option name="y" value="159" />
     <option name="width" value="1374" />
     <option name="height" value="1417" />
   </component>
@@ -88,17 +100,61 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="PythonProject2">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="PythonProject2">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT=".idea">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.intellij.ide.scratch.ScratchProjectViewPane$MyProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Extensions" />
+              <option name="myItemType" value="com.intellij.ide.scratch.ScratchProjectViewPane$MyRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.intellij.database" />
+              <option name="myItemType" value="com.intellij.ide.scratch.ScratchProjectViewPane$MyPsiNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="untitled2" />
+              <option name="myItemId" value="PythonProject" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="PythonProject" />
+              <option name="myItemId" value="PythonProject2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -125,12 +181,13 @@
     </excluded-roots>
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/../PythonProject/CollectPicture" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/CollectPicture/MmCollect" />
       <recent name="$PROJECT_DIR$/../PythonProject/CollectPicture/MmCollect" />
       <recent name="$PROJECT_DIR$/../PythonProject" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../PythonProject/CollectPicture" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -476,11 +533,46 @@
       <option name="project" value="LOCAL" />
       <updated>1507828746800</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="整理CollectPicture文件夹">
+      <created>1507830463209</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1507830463209</updated>
+    </task>
+    <task id="LOCAL-00016" summary="添加text">
+      <created>1507830607748</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1507830607748</updated>
+    </task>
+    <task id="LOCAL-00017" summary="添加text">
+      <created>1507830912228</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1507830912228</updated>
+    </task>
+    <task id="LOCAL-00018" summary="修改text">
+      <created>1507831071793</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1507831071794</updated>
+    </task>
+    <task id="LOCAL-00019" summary="移动text">
+      <created>1507831591546</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1507831591546</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1374" height="1417" extended-state="0" />
+    <frame x="66" y="159" width="1374" height="1417" extended-state="0" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41775838" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -516,22 +608,21 @@
     <MESSAGE value="添加main方法" />
     <MESSAGE value="移动py文件" />
     <MESSAGE value="整理CollectPicture文件夹" />
-    <option name="LAST_COMMIT_MESSAGE" value="整理CollectPicture文件夹" />
+    <MESSAGE value="添加text" />
+    <MESSAGE value="修改text" />
+    <MESSAGE value="移动text" />
+    <option name="LAST_COMMIT_MESSAGE" value="移动text" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mm/MmmCollect/纤腰爆乳美女李梓熙制服写真绝对好看38.jpg" />
-    <entry file="file://$PROJECT_DIR$/mm/MmmCollect/纤腰爆乳美女李梓熙制服写真绝对好看36.jpg" />
-    <entry file="file://$PROJECT_DIR$/mm/MmmCollect/酥胸肥臀身材好!性感模特刘钰儿私房照37.jpg" />
     <entry file="file://$PROJECT_DIR$/mm/MmmCollect/E罩杯巨乳美女李梓熙开胸透视装写真图27.jpg" />
-    <entry file="file://$PROJECT_DIR$/../PythonProject/CollectPicture/MmCollect/__init__.py">
+    <entry file="file://$PROJECT_DIR$/CollectPicture/MmCollect/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -568,78 +659,39 @@
     <entry file="file://$PROJECT_DIR$/mm/MmmCollect/爆乳妹子衣衫不整34D白兔让人大呼过瘾27.jpg" />
     <entry file="file://$PROJECT_DIR$/mm/MmmCollect/爆乳妹子衣衫不整34D白兔让人大呼过瘾26.jpg" />
     <entry file="file://$PROJECT_DIR$/mm/MmmCollect/爆乳妹子衣衫不整34D白兔让人大呼过瘾20.jpg" />
-    <entry file="file://$PROJECT_DIR$/mm/MmmCollect/真大!性感模特36E纯天然爆乳难以抗拒1.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../PythonProject/CollectPicture/MmmCollect/高颜值大胸脯的丰满美女倪诗茵写真图1.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../PythonProject/CollectPicture/MmmCollect/高颜值大胸脯的丰满美女倪诗茵写真图2.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../PythonProject/CollectPicture/MmmCollect/高颜值大胸脯的丰满美女倪诗茵写真图3.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../PythonProject/CollectPicture/MmmCollect/高颜值大胸脯的丰满美女倪诗茵写真图4.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../PythonProject/CollectPicture/MmmCollect/高颜值大胸脯的丰满美女倪诗茵写真图5.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../PythonProject/CollectPicture/MmmCollect/高颜值大胸脯的丰满美女倪诗茵写真图6.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../PythonProject/CollectPicture/MmmCollect/高颜值大胸脯的丰满美女倪诗茵写真图7.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../PythonProject/CollectPicture/MmmCollect/高颜值大胸脯的丰满美女倪诗茵写真图8.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../PythonProject/CollectPicture/MmmCollect/高颜值大胸脯的丰满美女倪诗茵写真图9.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../PythonProject/collect.py">
+    <entry file="file://$PROJECT_DIR$/mm/MmmCollect/真大!性感模特36E纯天然爆乳难以抗拒1.jpg" />
+    <entry file="file://$PROJECT_DIR$/../PythonProject/CollectPicture/MmmCollect/高颜值大胸脯的丰满美女倪诗茵写真图1.jpg" />
+    <entry file="file://$PROJECT_DIR$/../PythonProject/CollectPicture/MmmCollect/高颜值大胸脯的丰满美女倪诗茵写真图2.jpg" />
+    <entry file="file://$PROJECT_DIR$/../PythonProject/CollectPicture/MmmCollect/高颜值大胸脯的丰满美女倪诗茵写真图3.jpg" />
+    <entry file="file://$PROJECT_DIR$/../PythonProject/CollectPicture/MmmCollect/高颜值大胸脯的丰满美女倪诗茵写真图4.jpg" />
+    <entry file="file://$PROJECT_DIR$/../PythonProject/CollectPicture/MmmCollect/高颜值大胸脯的丰满美女倪诗茵写真图5.jpg" />
+    <entry file="file://$PROJECT_DIR$/../PythonProject/CollectPicture/MmmCollect/高颜值大胸脯的丰满美女倪诗茵写真图6.jpg" />
+    <entry file="file://$PROJECT_DIR$/../PythonProject/CollectPicture/MmmCollect/高颜值大胸脯的丰满美女倪诗茵写真图7.jpg" />
+    <entry file="file://$PROJECT_DIR$/../PythonProject/CollectPicture/MmmCollect/高颜值大胸脯的丰满美女倪诗茵写真图8.jpg" />
+    <entry file="file://$PROJECT_DIR$/../PythonProject/CollectPicture/MmmCollect/高颜值大胸脯的丰满美女倪诗茵写真图9.jpg" />
+    <entry file="file://$PROJECT_DIR$/../PythonProject/collect.py" />
+    <entry file="file://$PROJECT_DIR$/../PythonProject/CollectPicture/MmCollect/collect.py" />
+    <entry file="file://$PROJECT_DIR$/../PythonProject/CollectPicture/MmCollect/collect.py" />
+    <entry file="file://$PROJECT_DIR$/CollectPicture/MmCollect/1.text">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="778">
-          <caret line="65" column="24" lean-forward="true" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="24" />
+        <state relative-caret-position="0">
+          <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../PythonProject/CollectPicture/MmCollect/collect.py">
+    <entry file="file://$PROJECT_DIR$/CollectPicture/MmCollect/1.text">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="37" column="18" lean-forward="false" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
-          <folding>
-            <element signature="e#98#113#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../PythonProject/CollectPicture/MmCollect/collect.py">
+    <entry file="file://$PROJECT_DIR$/CollectPicture/MmCollect/collect1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="34" column="25" lean-forward="true" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
