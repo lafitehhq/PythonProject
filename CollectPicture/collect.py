@@ -60,3 +60,6 @@ if __name__ == '__main__':
     page_number = input('请输入需要爬取的页码：')
     for link in get_page_number(page_number):
         download_image(get_image_title(link), get_image_detail_website(link))
+
+        
+      C测试
