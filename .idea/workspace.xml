@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb347665-1787-4e8e-933b-f2ec244be73c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PythonProject/.idea/PythonProjectTest.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PythonProject/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PythonProject/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PythonProject/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PythonProject/CollectPicture/MmCollect/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PythonProject/CollectPicture/MmCollect/collect.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PythonProject/CollectPicture/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../PythonProject/CollectPicture/collect.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../PythonProject/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../PythonProject/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
     </list>
     <ignored path="untitled2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,7 +30,7 @@
       <file leaf-file-name="collect.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../PythonProject/CollectPicture/MmCollect/collect.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="588">
+            <state relative-caret-position="151">
               <caret line="37" column="18" lean-forward="false" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
               <folding>
                 <element signature="e#98#113#0" expanded="true" />
@@ -398,7 +392,14 @@
       <option name="project" value="LOCAL" />
       <updated>1507825658454</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="python应用：爬取图片">
+      <created>1507825931515</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1507825931515</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -432,6 +433,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="SHOW_UNVERSIONED_FILES_WHILE_COMMIT" value="false" />
     <MESSAGE value="python应用：爬取图片" />
     <option name="LAST_COMMIT_MESSAGE" value="python应用：爬取图片" />
@@ -494,7 +496,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../PythonProject/CollectPicture/MmCollect/collect.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
+        <state relative-caret-position="151">
           <caret line="37" column="18" lean-forward="false" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
           <folding>
             <element signature="e#98#113#0" expanded="true" />
