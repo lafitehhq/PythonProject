@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eb347665-1787-4e8e-933b-f2ec244be73c" name="Default" comment="添加text">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+    <list default="true" id="eb347665-1787-4e8e-933b-f2ec244be73c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CMDB:自动化运维平台/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CRM:客户管理系统/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JumpServer:堡垒机/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="untitled2.iws" />
@@ -15,9 +17,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/untitled2$collect__1_.coverage" NAME="collect (1) Coverage Results" MODIFIED="1507822367702" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../PythonProject/CollectPicture/MmmCollect" />
+    <SUITE FILE_PATH="coverage/untitled2$collect__1_.coverage" NAME="collect (1) Coverage Results" MODIFIED="1507822367702" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CollectPicture/MmmCollect" />
     <SUITE FILE_PATH="coverage/untitled2$collect.coverage" NAME="collect Coverage Results" MODIFIED="1507736055488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mm/MmmCollect" />
-    <SUITE FILE_PATH="coverage/untitled2$collect__2_.coverage" NAME="collect (2) Coverage Results" MODIFIED="1507828172859" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../PythonProject/CollectPicture" />
+    <SUITE FILE_PATH="coverage/untitled2$collect__2_.coverage" NAME="collect (2) Coverage Results" MODIFIED="1507828172859" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CollectPicture" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -28,22 +30,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="1.text" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CollectPicture/MmCollect/1.text">
+      <file leaf-file-name="connectMySQL.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Python基础操作/数据库/connectMySQL.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="collect1.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CollectPicture/MmCollect/collect1.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="193">
+              <caret line="15" column="83" lean-forward="false" selection-start-line="15" selection-start-column="83" selection-end-line="15" selection-end-column="83" />
+              <folding>
+                <marker date="1507990945000" expanded="true" signature="294:331" ph="insert into class... " />
+                <marker date="1507990945000" expanded="true" signature="651:715" ph="insert into student... " />
+                <marker date="1507990945000" expanded="true" signature="751:782" ph="delete from " />
+                <marker date="1507990945000" expanded="true" signature="823:868" ph="update stude... " />
+                <marker date="1507990945000" expanded="true" signature="932:953" ph="select * fro... student" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -60,15 +58,19 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="PUSH_TAGS">
-      <GitPushTagMode />
+      <GitPushTagMode>
+        <option name="argument" value="--follow-tags" />
+        <option name="title" value="Current Branch" />
+      </GitPushTagMode>
     </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/mm/MmmCollect/collect.py" />
-        <option value="$PROJECT_DIR$/../PythonProject/CollectPicture/collect.py" />
+        <option value="$PROJECT_DIR$/CollectPicture/collect.py" />
         <option value="$PROJECT_DIR$/CollectPicture/MmCollect/1.text" />
+        <option value="$PROJECT_DIR$/Python基础操作/数据库/connectMySQL.py" />
       </list>
     </option>
   </component>
@@ -79,10 +81,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="66" />
-    <option name="y" value="159" />
-    <option name="width" value="1374" />
-    <option name="height" value="1417" />
+    <option name="y" value="23" />
+    <option name="width" value="1276" />
+    <option name="height" value="777" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -100,6 +101,38 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PythonProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PythonProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.intellij.ide.scratch.ScratchProjectViewPane$MyProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Extensions" />
+              <option name="myItemType" value="com.intellij.ide.scratch.ScratchProjectViewPane$MyRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.intellij.database" />
+              <option name="myItemType" value="com.intellij.ide.scratch.ScratchProjectViewPane$MyPsiNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -128,52 +161,13 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.intellij.ide.scratch.ScratchProjectViewPane$MyProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Extensions" />
-              <option name="myItemType" value="com.intellij.ide.scratch.ScratchProjectViewPane$MyRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.intellij.database" />
-              <option name="myItemType" value="com.intellij.ide.scratch.ScratchProjectViewPane$MyPsiNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonProject2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CollectPicture" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MmCollect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="ChangesBrowser.SHOW_FLATTEN" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="Push.Settings">
     <excluded-roots>
@@ -183,11 +177,11 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/CollectPicture/MmCollect" />
-      <recent name="$PROJECT_DIR$/../PythonProject/CollectPicture/MmCollect" />
-      <recent name="$PROJECT_DIR$/../PythonProject" />
+      <recent name="$PROJECT_DIR$/CollectPicture/MmCollect" />
+      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/../PythonProject/CollectPicture" />
+      <recent name="$PROJECT_DIR$/CollectPicture" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -229,13 +223,13 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../PythonProject/CollectPicture/MmmCollect" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CollectPicture/MmmCollect" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="PythonProject" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../PythonProject/CollectPicture/MmmCollect/collect.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CollectPicture/MmmCollect/collect.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -248,13 +242,13 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../PythonProject/CollectPicture" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CollectPicture" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="PythonProject" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../PythonProject/CollectPicture/MmCollect/collect.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CollectPicture/MmCollect/collect.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -568,18 +562,53 @@
       <option name="project" value="LOCAL" />
       <updated>1507831591546</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="添整理文件夹">
+      <created>1507831720947</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1507831720947</updated>
+    </task>
+    <task id="LOCAL-00021" summary="删除text文件">
+      <created>1507832100567</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1507832100567</updated>
+    </task>
+    <task id="LOCAL-00022" summary="修改collect.py的文件名">
+      <created>1507832218504</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1507832218504</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Python工程の基础操作">
+      <created>1507985722781</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1507985722781</updated>
+    </task>
+    <task id="LOCAL-00024" summary="添加增删改查功能总结">
+      <created>1507994175387</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1507994175388</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="66" y="159" width="1374" height="1417" extended-state="0" />
+    <frame x="0" y="23" width="1276" height="777" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41775838" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2504052" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17878339" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32937685" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24233577" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950467" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -611,14 +640,18 @@
     <MESSAGE value="添加text" />
     <MESSAGE value="修改text" />
     <MESSAGE value="移动text" />
-    <option name="LAST_COMMIT_MESSAGE" value="移动text" />
+    <MESSAGE value="添整理文件夹" />
+    <MESSAGE value="删除text文件" />
+    <MESSAGE value="修改collect.py的文件名" />
+    <MESSAGE value="Python工程の基础操作" />
+    <MESSAGE value="添加增删改查功能总结" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加增删改查功能总结" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mm/MmmCollect/E罩杯巨乳美女李梓熙开胸透视装写真图27.jpg" />
     <entry file="file://$PROJECT_DIR$/CollectPicture/MmCollect/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -660,39 +693,38 @@
     <entry file="file://$PROJECT_DIR$/mm/MmmCollect/爆乳妹子衣衫不整34D白兔让人大呼过瘾26.jpg" />
     <entry file="file://$PROJECT_DIR$/mm/MmmCollect/爆乳妹子衣衫不整34D白兔让人大呼过瘾20.jpg" />
     <entry file="file://$PROJECT_DIR$/mm/MmmCollect/真大!性感模特36E纯天然爆乳难以抗拒1.jpg" />
-    <entry file="file://$PROJECT_DIR$/../PythonProject/CollectPicture/MmmCollect/高颜值大胸脯的丰满美女倪诗茵写真图1.jpg" />
-    <entry file="file://$PROJECT_DIR$/../PythonProject/CollectPicture/MmmCollect/高颜值大胸脯的丰满美女倪诗茵写真图2.jpg" />
-    <entry file="file://$PROJECT_DIR$/../PythonProject/CollectPicture/MmmCollect/高颜值大胸脯的丰满美女倪诗茵写真图3.jpg" />
-    <entry file="file://$PROJECT_DIR$/../PythonProject/CollectPicture/MmmCollect/高颜值大胸脯的丰满美女倪诗茵写真图4.jpg" />
-    <entry file="file://$PROJECT_DIR$/../PythonProject/CollectPicture/MmmCollect/高颜值大胸脯的丰满美女倪诗茵写真图5.jpg" />
-    <entry file="file://$PROJECT_DIR$/../PythonProject/CollectPicture/MmmCollect/高颜值大胸脯的丰满美女倪诗茵写真图6.jpg" />
-    <entry file="file://$PROJECT_DIR$/../PythonProject/CollectPicture/MmmCollect/高颜值大胸脯的丰满美女倪诗茵写真图7.jpg" />
-    <entry file="file://$PROJECT_DIR$/../PythonProject/CollectPicture/MmmCollect/高颜值大胸脯的丰满美女倪诗茵写真图8.jpg" />
-    <entry file="file://$PROJECT_DIR$/../PythonProject/CollectPicture/MmmCollect/高颜值大胸脯的丰满美女倪诗茵写真图9.jpg" />
-    <entry file="file://$PROJECT_DIR$/../PythonProject/collect.py" />
-    <entry file="file://$PROJECT_DIR$/../PythonProject/CollectPicture/MmCollect/collect.py" />
-    <entry file="file://$PROJECT_DIR$/../PythonProject/CollectPicture/MmCollect/collect.py" />
-    <entry file="file://$PROJECT_DIR$/CollectPicture/MmCollect/1.text">
+    <entry file="file://$PROJECT_DIR$/CollectPicture/MmmCollect/高颜值大胸脯的丰满美女倪诗茵写真图1.jpg" />
+    <entry file="file://$PROJECT_DIR$/CollectPicture/MmmCollect/高颜值大胸脯的丰满美女倪诗茵写真图2.jpg" />
+    <entry file="file://$PROJECT_DIR$/CollectPicture/MmmCollect/高颜值大胸脯的丰满美女倪诗茵写真图3.jpg" />
+    <entry file="file://$PROJECT_DIR$/CollectPicture/MmmCollect/高颜值大胸脯的丰满美女倪诗茵写真图4.jpg" />
+    <entry file="file://$PROJECT_DIR$/CollectPicture/MmmCollect/高颜值大胸脯的丰满美女倪诗茵写真图5.jpg" />
+    <entry file="file://$PROJECT_DIR$/CollectPicture/MmmCollect/高颜值大胸脯的丰满美女倪诗茵写真图6.jpg" />
+    <entry file="file://$PROJECT_DIR$/CollectPicture/MmmCollect/高颜值大胸脯的丰满美女倪诗茵写真图7.jpg" />
+    <entry file="file://$PROJECT_DIR$/CollectPicture/MmmCollect/高颜值大胸脯的丰满美女倪诗茵写真图8.jpg" />
+    <entry file="file://$PROJECT_DIR$/CollectPicture/MmmCollect/高颜值大胸脯的丰满美女倪诗茵写真图9.jpg" />
+    <entry file="file://$PROJECT_DIR$/collect.py" />
+    <entry file="file://$PROJECT_DIR$/CollectPicture/MmCollect/collect.py" />
+    <entry file="file://$PROJECT_DIR$/CollectPicture/MmCollect/collect.py" />
+    <entry file="file://$PROJECT_DIR$/CollectPicture/MmCollect/1.text" />
+    <entry file="file://$PROJECT_DIR$/CollectPicture/MmCollect/1.text" />
+    <entry file="file://$PROJECT_DIR$/CollectPicture/MmCollect/collect.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-          <folding />
+        <state relative-caret-position="69">
+          <caret line="4" column="21" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CollectPicture/MmCollect/1.text">
+    <entry file="file://$PROJECT_DIR$/Python基础操作/数据库/connectMySQL.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CollectPicture/MmCollect/collect1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="193">
+          <caret line="15" column="83" lean-forward="false" selection-start-line="15" selection-start-column="83" selection-end-line="15" selection-end-column="83" />
+          <folding>
+            <marker date="1507990945000" expanded="true" signature="294:331" ph="insert into class... " />
+            <marker date="1507990945000" expanded="true" signature="651:715" ph="insert into student... " />
+            <marker date="1507990945000" expanded="true" signature="751:782" ph="delete from " />
+            <marker date="1507990945000" expanded="true" signature="823:868" ph="update stude... " />
+            <marker date="1507990945000" expanded="true" signature="932:953" ph="select * fro... student" />
+          </folding>
         </state>
       </provider>
     </entry>
