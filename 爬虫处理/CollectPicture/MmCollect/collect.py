@@ -1,7 +1,7 @@
 # 用python爬取清纯妹子图片（用到requests和lxml库）
 # 参考链接：https://github.com/zmb4973992/2/blob/master/spider.py
 
-import requests
+import request
 from lxml import html
 
 # 构建函数，用来查找该页内所有图片集的详细地址。目前一页包含15组套图，所以应该返回包含15个链接的序列。
