@@ -1,15 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eb347665-1787-4e8e-933b-f2ec244be73c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    <list default="true" id="eb347665-1787-4e8e-933b-f2ec244be73c" name="Default" comment="PhthonProject项目总结">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CMDB_自动化运维平台/db.sqlite3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/JumpServer_堡垒机/db.sqlite3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Django/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CMDB_自动化运维平台/NBcmdb/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CMDB_自动化运维平台/NBcmdb/settings.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CMDB_自动化运维平台/NBcmdb/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CMDB_自动化运维平台/NBcmdb/wsgi.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CMDB_自动化运维平台/asset/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CMDB_自动化运维平台/asset/admin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CMDB_自动化运维平台/asset/apps.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CMDB_自动化运维平台/asset/migrations/0001_initial.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CMDB_自动化运维平台/asset/migrations/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CMDB_自动化运维平台/asset/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CMDB_自动化运维平台/asset/models2.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CMDB_自动化运维平台/asset/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CMDB_自动化运维平台/asset/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CMDB_自动化运维平台/manage.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/PerfectCRM/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/PerfectCRM/settings.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/PerfectCRM/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/PerfectCRM/wsgi.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/crm/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/crm/admin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/crm/apps.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/crm/migrations/0001_initial.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/crm/migrations/0002_auto_20170104_1713.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/crm/migrations/0003_customer_status.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/crm/migrations/0004_auto_20170104_1841.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/crm/migrations/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/crm/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/crm/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/crm/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/crm/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/king_admin/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/king_admin/admin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/king_admin/apps.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/king_admin/king_admin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/king_admin/migrations/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/king_admin/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/king_admin/templatetags/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/king_admin/templatetags/tags.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/king_admin/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/king_admin/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/king_admin/utils.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/king_admin/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/manage.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/statics/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/statics/css/dashboard.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/statics/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/statics/js/docs.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/statics/js/ie-emulation-modes-warning.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/statics/js/ie10-viewport-bug-workaround.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/statics/js/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/student/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/student/admin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/student/apps.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/student/migrations/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/student/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/student/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/student/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/student/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/templates/base.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/templates/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/templates/king_admin/table_index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/templates/king_admin/table_objs.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/templates/sales/customers.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/templates/student/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/JumpServer_堡垒机/CrazyAss/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/JumpServer_堡垒机/CrazyAss/settings.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/JumpServer_堡垒机/CrazyAss/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/JumpServer_堡垒机/CrazyAss/wsgi.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/JumpServer_堡垒机/audit/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/JumpServer_堡垒机/audit/admin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/JumpServer_堡垒机/audit/apps.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/JumpServer_堡垒机/audit/migrations/0001_initial.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/JumpServer_堡垒机/audit/migrations/0002_remove_userprofile_is_admin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/JumpServer_堡垒机/audit/migrations/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/JumpServer_堡垒机/audit/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/JumpServer_堡垒机/audit/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/JumpServer_堡垒机/audit/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/JumpServer_堡垒机/backend/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/JumpServer_堡垒机/manage.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/JumpServer_堡垒机/user_enterpoint.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/基础操作/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/数据处理/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/机器学习/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/爬虫处理/__init__.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/PythonProject.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/PythonProjectTest.iml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/PythonProjectTest.iml" afterPath="$PROJECT_DIR$/.idea/PythonProject.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/后台运维/CMDB:自动化运维平台/__init__.py" afterPath="$PROJECT_DIR$/后台运维/CMDB_自动化运维平台/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/后台运维/CRM:客户管理系统/__init__.py" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/后台运维/JumpServer:堡垒机/__init__.py" afterPath="$PROJECT_DIR$/后台运维/JumpServer_堡垒机/__init__.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="untitled2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,12 +151,13 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1019" />
-    <option name="y" value="54" />
-    <option name="width" value="1276" />
-    <option name="height" value="777" />
+    <option name="x" value="960" />
+    <option name="width" value="960" />
+    <option name="height" value="1040" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -87,75 +173,57 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.intellij.ide.scratch.ScratchProjectViewPane$MyProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Extensions" />
-              <option name="myItemType" value="com.intellij.ide.scratch.ScratchProjectViewPane$MyRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.intellij.database" />
-              <option name="myItemType" value="com.intellij.ide.scratch.ScratchProjectViewPane$MyPsiNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="PythonProject" />
+              <option name="myItemId" value="PythonProject1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="PythonProject" />
+              <option name="myItemId" value="PythonProject1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="PythonProject" />
+              <option name="myItemId" value="PythonProject1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="PythonProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="数据处理" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="基础操作" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonProject" />
+              <option name="myItemId" value="PythonProject1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="后台运维" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PythonProject1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PythonProject1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Quant" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PythonProject1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PythonProject1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Django" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -189,6 +257,24 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.intellij.ide.scratch.ScratchProjectViewPane$MyProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Extensions" />
+              <option name="myItemType" value="com.intellij.ide.scratch.ScratchProjectViewPane$MyRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.intellij.database" />
+              <option name="myItemType" value="com.intellij.ide.scratch.ScratchProjectViewPane$MyPsiNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -197,20 +283,19 @@
     <property name="ChangesBrowser.SHOW_FLATTEN" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="Push.Settings">
-    <excluded-roots>
-      <path value="$PROJECT_DIR$" />
-    </excluded-roots>
-  </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/CollectPicture" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/后台运维" />
       <recent name="$PROJECT_DIR$/CollectPicture/MmCollect" />
       <recent name="$PROJECT_DIR$/CollectPicture/MmCollect" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Pycharm Workingspace\PythonProject1\后台运维\CRM_客户管理系统" />
+      <recent name="E:\Pycharm Workingspace\PythonProject1\后台运维\CMDB_自动化运维平台" />
+      <recent name="E:\Pycharm Workingspace\PythonProject1\后台运维\JumpServer_堡垒机" />
+      <recent name="E:\Pycharm Workingspace\PythonProject1\爬虫处理" />
+      <recent name="E:\Pycharm Workingspace\PythonProject1\机器学习" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -626,13 +711,20 @@
       <option name="project" value="LOCAL" />
       <updated>1509463666453</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="PhthonProject项目总结">
+      <created>1509772135881</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1509772135881</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1019" y="54" width="1276" height="777" extended-state="0" />
+    <frame x="960" y="0" width="960" height="1040" extended-state="0" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16904762" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3792373" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -670,7 +762,8 @@
     <MESSAGE value="修改text" />
     <MESSAGE value="移动text" />
     <MESSAGE value="项目归类" />
-    <option name="LAST_COMMIT_MESSAGE" value="项目归类" />
+    <MESSAGE value="PhthonProject项目总结" />
+    <option name="LAST_COMMIT_MESSAGE" value="PhthonProject项目总结" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
