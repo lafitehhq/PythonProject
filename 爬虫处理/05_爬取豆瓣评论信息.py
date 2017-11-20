@@ -20,8 +20,6 @@ name = s.xpath('//*[@id="comments"]/ul/li/div[2]/h3/span[2]/a/text()')
 import pandas as pd
 df = pd.DataFrame(file)
 df.to_excel('05_comment.xlsx')
-http://www.zkh360.com/Product/SearchProduct?brandId=240&pageIndex=2&pageSize=20
-http://www.zkh360.com/Product/SearchProduct?brandId=240&pageIndex=3&pageSize=20
 
 
 
