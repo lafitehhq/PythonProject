@@ -51,7 +51,7 @@ def render_filter_ele(condtion,admin_class,filter_condtions):
     if field_obj.choices:
         selected = ''
         for choice_item in field_obj.choices:
-            print("choice",choice_item,filter_condtions.get(condtion),type(filter_condtions.get(condtion)))
+            print(("choice",choice_item,filter_condtions.get(condtion),type(filter_condtions.get(condtion)))
             if filter_condtions.get(condtion) == str(choice_item[0]):
                 selected ="selected"
 

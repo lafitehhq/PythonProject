@@ -50,5 +50,6 @@ def get_user_data(page):
 
 if __name__ == '__main__':
     get_user_data(10)
+    print(type(userData))
     df = pd.DataFrame.from_dict(userData)
-    df.to_csv('06_user_upgrade.csv')
+    # df.to_csv('06_user_upgrade.csv')
