@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-参考链接：http://www.cnblogs.com/fnng/p/3670789.html
+参考链接：
+http://www.cnblogs.com/fnng/p/3670789.html
+http://www.cnblogs.com/fnng/p/3691053.html
 """
 
 # --单线程例子-- #
