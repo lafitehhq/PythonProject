@@ -1,8 +1,13 @@
 # -*- coding: utf-8 -*-
 
+""" 
+使用pymongo将项目写入MongoDB。
+MongoDB地址和数据库名称在Scrapy设置中指定； MongoDB集合以item类命名
+"""
+
 import pymongo
 
-class MongoPipeline(object):
+class MongoPip2line(object):
     collection_name = 'scrapy_items'
 
     def __init__(self, mongo_uri, mongo_db):
@@ -12,13 +17,14 @@ class MongoPipeline(object):
     @classmethod
     def from_crawler(cls, crawler):
         return cls(
-            mongo_url=crawler.setting.get('MONGO_URI'),
-            mongo_db=crawler.setting.get('MONGO_DATABASE', 'items')
+            mongo_uri=crawler.settings.get('MONGO_URI'),
+            mongo_db=crawler.settings.get('MONGO_DATABASE', 'items')
+
         )
 
     def open_spider(self, spider):
         self.client = pymongo.MongoClient(self.mongo_uri)
-        self.db = pymongo.MongoClient(self.mongo_db)
+        self.db = self.client[self.mongo_db]
 
     def close_spider(self, spider):
         self.client.close()
