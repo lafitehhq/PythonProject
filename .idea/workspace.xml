@@ -2,98 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb347665-1787-4e8e-933b-f2ec244be73c" name="Default" comment="PhthonProject项目总结">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CMDB_自动化运维平台/db.sqlite3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/JumpServer_堡垒机/db.sqlite3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Django/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CMDB_自动化运维平台/NBcmdb/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CMDB_自动化运维平台/NBcmdb/settings.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CMDB_自动化运维平台/NBcmdb/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CMDB_自动化运维平台/NBcmdb/wsgi.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CMDB_自动化运维平台/asset/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CMDB_自动化运维平台/asset/admin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CMDB_自动化运维平台/asset/apps.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CMDB_自动化运维平台/asset/migrations/0001_initial.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CMDB_自动化运维平台/asset/migrations/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CMDB_自动化运维平台/asset/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CMDB_自动化运维平台/asset/models2.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CMDB_自动化运维平台/asset/tests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CMDB_自动化运维平台/asset/views.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CMDB_自动化运维平台/manage.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/PerfectCRM/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/PerfectCRM/settings.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/PerfectCRM/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/PerfectCRM/wsgi.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/crm/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/crm/admin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/crm/apps.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/crm/migrations/0001_initial.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/crm/migrations/0002_auto_20170104_1713.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/crm/migrations/0003_customer_status.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/crm/migrations/0004_auto_20170104_1841.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/crm/migrations/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/crm/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/crm/tests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/crm/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/crm/views.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/king_admin/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/king_admin/admin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/king_admin/apps.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/king_admin/king_admin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/king_admin/migrations/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/king_admin/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/king_admin/templatetags/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/king_admin/templatetags/tags.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/king_admin/tests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/king_admin/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/king_admin/utils.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/king_admin/views.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/manage.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/statics/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/statics/css/dashboard.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/statics/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/statics/js/docs.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/statics/js/ie-emulation-modes-warning.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/statics/js/ie10-viewport-bug-workaround.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/statics/js/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/student/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/student/admin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/student/apps.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/student/migrations/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/student/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/student/tests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/student/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/student/views.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/templates/base.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/templates/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/templates/king_admin/table_index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/templates/king_admin/table_objs.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/templates/sales/customers.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/CRM_客户管理系统/templates/student/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/JumpServer_堡垒机/CrazyAss/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/JumpServer_堡垒机/CrazyAss/settings.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/JumpServer_堡垒机/CrazyAss/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/JumpServer_堡垒机/CrazyAss/wsgi.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/JumpServer_堡垒机/audit/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/JumpServer_堡垒机/audit/admin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/JumpServer_堡垒机/audit/apps.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/JumpServer_堡垒机/audit/migrations/0001_initial.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/JumpServer_堡垒机/audit/migrations/0002_remove_userprofile_is_admin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/JumpServer_堡垒机/audit/migrations/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/JumpServer_堡垒机/audit/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/JumpServer_堡垒机/audit/tests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/JumpServer_堡垒机/audit/views.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/JumpServer_堡垒机/backend/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/JumpServer_堡垒机/manage.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/后台运维/JumpServer_堡垒机/user_enterpoint.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/基础操作/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/数据处理/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/机器学习/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/爬虫处理/__init__.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/PythonProject.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/PythonProjectTest.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/PythonProject.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/mongoSettings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="untitled2.iws" />
@@ -106,10 +19,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/untitled2$collect__2_.coverage" NAME="collect (2) Coverage Results" MODIFIED="1507828172859" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CollectPicture" />
     <SUITE FILE_PATH="coverage/untitled2$collect__1_.coverage" NAME="collect (1) Coverage Results" MODIFIED="1507822367702" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CollectPicture/MmmCollect" />
     <SUITE FILE_PATH="coverage/untitled2$collect.coverage" NAME="collect Coverage Results" MODIFIED="1507736055488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mm/MmmCollect" />
-    <SUITE FILE_PATH="coverage/PythonProject$collect__3_.coverage" NAME="collect (3) Coverage Results" MODIFIED="1509377737412" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫处理/CollectPicture/MmCollect" />
+    <SUITE FILE_PATH="coverage/PythonProject$07_.coverage" NAME="07_爬取拉钩信息 Coverage Results" MODIFIED="1511582632938" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫处理" />
+    <SUITE FILE_PATH="coverage/untitled2$collect__2_.coverage" NAME="collect (2) Coverage Results" MODIFIED="1507828172859" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CollectPicture" />
+    <SUITE FILE_PATH="coverage/PythonProject$collect__3_.coverage" NAME="collect (3) Coverage Results" MODIFIED="1511582493934" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫处理/CollectPicture/MmCollect" />
+    <SUITE FILE_PATH="coverage/PythonProject$2_3_PythonMongoDB_.coverage" NAME="2.3.Python操作MongoDB_处理数据 Coverage Results" MODIFIED="1511582702115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/数据库操作" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -119,7 +34,58 @@
     <favorites_list name="untitled2" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="2.3.Python操作MongoDB_处理数据.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/数据库操作/2.3.Python操作MongoDB_处理数据.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="8">
+              <caret line="12" column="11" lean-forward="false" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+              <folding>
+                <marker date="1512200990000" expanded="true" signature="314:338" ph="..." />
+                <marker date="1512200990000" expanded="true" signature="437:474" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="07_爬取拉钩信息.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/爬虫处理/07_爬取拉钩信息.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-199">
+              <caret line="34" column="12" lean-forward="false" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="items.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/爬虫处理/Scrapy/city_58/city_58/items.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="选择器_CSS选择器.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/爬虫处理/Scrapy/city_58/city_58/utils/选择器_CSS选择器.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="null/lagou/job" pinned="false" current-in-tab="false">
+        <entry file="mongo://null/lagou/job">
+          <provider selected="true" editor-type-id="MongoData">
+            <state />
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -141,6 +107,7 @@
         <option value="$PROJECT_DIR$/CollectPicture/collect.py" />
         <option value="$PROJECT_DIR$/CollectPicture/MmCollect/1.text" />
         <option value="$PROJECT_DIR$/爬虫处理/CollectPicture/MmCollect/collect.py" />
+        <option value="$PROJECT_DIR$/爬虫处理/07_爬取拉钩信息.py" />
       </list>
     </option>
   </component>
@@ -151,9 +118,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="960" />
-    <option name="width" value="960" />
-    <option name="height" value="1040" />
+    <option name="y" value="23" />
+    <option name="width" value="1374" />
+    <option name="height" value="1417" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -177,53 +144,11 @@
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="PythonProject1" />
+              <option name="myItemId" value="PythonProject" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="PythonProject1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonProject1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonProject1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="后台运维" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonProject1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonProject1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Quant" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonProject1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PythonProject1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Django" />
+              <option name="myItemId" value="PythonProject" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -310,26 +235,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.collect (3)">
-    <configuration default="false" name="collect" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mm/MmmCollect" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="untitled2" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mm/MmmCollect/collect.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.2.3.Python操作MongoDB_处理数据">
     <configuration default="false" name="collect (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -382,6 +288,44 @@
       <module name="PythonProject" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/爬虫处理/CollectPicture/MmCollect/collect.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="07_爬取拉钩信息" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/爬虫处理" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="PythonProject" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/爬虫处理/07_爬取拉钩信息.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="2.3.Python操作MongoDB_处理数据" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/数据库操作" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="PythonProject" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/数据库操作/2.3.Python操作MongoDB_处理数据.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -535,18 +479,20 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
-    <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="Python.collect" />
-      <item index="1" class="java.lang.String" itemvalue="Python.collect (1)" />
-      <item index="2" class="java.lang.String" itemvalue="Python.collect (2)" />
-      <item index="3" class="java.lang.String" itemvalue="Python.collect (3)" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Python.collect (1)" />
+      <item index="1" class="java.lang.String" itemvalue="Python.collect (2)" />
+      <item index="2" class="java.lang.String" itemvalue="Python.collect (3)" />
+      <item index="3" class="java.lang.String" itemvalue="Python.07_爬取拉钩信息" />
+      <item index="4" class="java.lang.String" itemvalue="Python.2.3.Python操作MongoDB_处理数据" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python.collect (3)" />
-        <item index="1" class="java.lang.String" itemvalue="Python.collect (2)" />
-        <item index="2" class="java.lang.String" itemvalue="Python.collect (1)" />
-        <item index="3" class="java.lang.String" itemvalue="Python.collect" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.2.3.Python操作MongoDB_处理数据" />
+        <item index="1" class="java.lang.String" itemvalue="Python.07_爬取拉钩信息" />
+        <item index="2" class="java.lang.String" itemvalue="Python.collect (3)" />
+        <item index="3" class="java.lang.String" itemvalue="Python.collect (2)" />
+        <item index="4" class="java.lang.String" itemvalue="Python.collect (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -718,21 +664,29 @@
       <option name="project" value="LOCAL" />
       <updated>1509772135881</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="爬取拉勾信息">
+      <created>1512200924916</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1512200924916</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="960" y="0" width="960" height="1040" extended-state="0" />
+    <frame x="0" y="23" width="1374" height="1417" extended-state="0" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3792373" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17878339" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32819724" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16905661" sideWeight="0.503003" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.07883212" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16905661" sideWeight="0.496997" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.077327326" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950467" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21321322" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39985642" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -763,17 +717,14 @@
     <MESSAGE value="移动text" />
     <MESSAGE value="项目归类" />
     <MESSAGE value="PhthonProject项目总结" />
-    <option name="LAST_COMMIT_MESSAGE" value="PhthonProject项目总结" />
+    <MESSAGE value="爬取拉勾信息" />
+    <option name="LAST_COMMIT_MESSAGE" value="爬取拉勾信息" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CollectPicture/MmCollect/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/mm/MmmCollect/妩媚女神高耸双乳挑逗得让人垂涎欲滴22.jpg" />
-    <entry file="file://$PROJECT_DIR$/mm/MmmCollect/妩媚女神高耸双乳挑逗得让人垂涎欲滴24.jpg" />
-    <entry file="file://$PROJECT_DIR$/mm/MmmCollect/妩媚女神高耸双乳挑逗得让人垂涎欲滴37.jpg" />
     <entry file="file://$PROJECT_DIR$/mm/MmmCollect/嫩妹子佑熙半透视装写真浑圆丰胸好美7.jpg" />
     <entry file="file://$PROJECT_DIR$/mm/MmmCollect/嫩妹子佑熙半透视装写真浑圆丰胸好美30.jpg" />
     <entry file="file://$PROJECT_DIR$/mm/MmmCollect/完美!高挑妹子杨茗琪一对酥胸暴露在外23.jpg" />
@@ -821,5 +772,40 @@
     <entry file="file://$PROJECT_DIR$/CollectPicture/MmCollect/1.text" />
     <entry file="file://$PROJECT_DIR$/CollectPicture/MmCollect/collect1.py" />
     <entry file="file://$PROJECT_DIR$/爬虫处理/CollectPicture/MmCollect/collect.py" />
+    <entry file="file://$PROJECT_DIR$/数据库操作/2.3.Python操作MongoDB_处理数据.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8">
+          <caret line="12" column="11" lean-forward="false" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+          <folding>
+            <marker date="1512200990000" expanded="true" signature="314:338" ph="..." />
+            <marker date="1512200990000" expanded="true" signature="437:474" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬虫处理/07_爬取拉钩信息.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-199">
+          <caret line="34" column="12" lean-forward="false" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬虫处理/Scrapy/city_58/city_58/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/爬虫处理/Scrapy/city_58/city_58/utils/选择器_CSS选择器.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
