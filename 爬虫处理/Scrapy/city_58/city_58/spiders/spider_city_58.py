@@ -15,7 +15,8 @@ class SpiderCity58Spider(scrapy.Spider):
     #     print('成功进入了解析器')
 
     # 实战
-    start_urls = ['http://sz.58.com/chuzu/']  # 开始爬取的链接
+    start_urls = ['http://sz.58.com/chuzu/',
+    'http://sz.58.com/chuzu/pn2/']  # 开始爬取的链接
 
     def parse(self, response):
         jpy = PyQuery(response.text)

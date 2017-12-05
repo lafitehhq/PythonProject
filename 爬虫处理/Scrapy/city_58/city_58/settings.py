@@ -46,9 +46,10 @@ ROBOTSTXT_OBEY = True
 
 # Enable or disable spider middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
-#SPIDER_MIDDLEWARES = {
-#    'city_58.middlewares.City58SpiderMiddleware': 543,
-#}
+SPIDER_MIDDLEWARES = {
+   # 'city_58.middlewares.MiddlewareMiddleware': 543, # 原装默认中间件
+   'city_58.middlewares.UAMiddleware': 543,  # UAMiddleware中间件
+}
 
 # Enable or disable downloader middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
