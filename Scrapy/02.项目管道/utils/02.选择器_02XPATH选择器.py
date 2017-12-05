@@ -16,6 +16,6 @@ sel = Selector(text=text)
 # 搜索某个路径下的某个标签下的内容 ；sel.xpath('/html/body/ul/li/a/div/text()')  -- 4个
 # 搜索某个路径下的第2个标签下的P标签的内容 ；sel.xpath('//li')[2].xpath('./p')
 # 脱壳操作取文本信息：sel.xpath('//li')[2].xpath('./p').extract_first()
-# 脱壳操作取文本属性：
+# 脱壳操作取文本属性：sel.xpath('/html/body/ul/li')[0].xpath('./@class').extract_first()
 
 pass
