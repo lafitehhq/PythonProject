@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eb347665-1787-4e8e-933b-f2ec244be73c" name="Default" comment="PhthonProject项目总结">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/PythonProject.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/mongoSettings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    <list default="true" id="eb347665-1787-4e8e-933b-f2ec244be73c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="untitled2.iws" />
@@ -671,7 +666,14 @@
       <option name="project" value="LOCAL" />
       <updated>1512200924916</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="PhthonProject项目总结">
+      <created>1512474722158</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1512474722158</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -716,9 +718,9 @@
     <MESSAGE value="修改text" />
     <MESSAGE value="移动text" />
     <MESSAGE value="项目归类" />
-    <MESSAGE value="PhthonProject项目总结" />
     <MESSAGE value="爬取拉勾信息" />
-    <option name="LAST_COMMIT_MESSAGE" value="爬取拉勾信息" />
+    <MESSAGE value="PhthonProject项目总结" />
+    <option name="LAST_COMMIT_MESSAGE" value="PhthonProject项目总结" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
