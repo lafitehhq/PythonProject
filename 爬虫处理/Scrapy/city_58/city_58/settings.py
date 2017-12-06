@@ -33,7 +33,7 @@ ROBOTSTXT_OBEY = True
 #CONCURRENT_REQUESTS_PER_IP = 16
 
 # Disable cookies (enabled by default)
-#COOKIES_ENABLED = False
+COOKIES_ENABLED = True  # True时cookies将会发送给web server
 
 # Disable Telnet Console (enabled by default)
 #TELNETCONSOLE_ENABLED = False
@@ -49,6 +49,8 @@ ROBOTSTXT_OBEY = True
 SPIDER_MIDDLEWARES = {
    # 'city_58.middlewares.MiddlewareMiddleware': 543, # 原装默认中间件
    'city_58.middlewares.UAMiddleware': 543,  # UAMiddleware中间件
+   'city_58.middlewares.RetryMiddleware': 544,  # RetryMiddleware中间件
+   'city_58.middlewares.CookiesMiddleware': 545,  # CookiesMiddleware中间件
 }
 
 # Enable or disable downloader middlewares
