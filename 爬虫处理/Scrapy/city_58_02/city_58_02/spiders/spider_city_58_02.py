@@ -1,24 +1,23 @@
 # -*- coding: utf-8 -*-
-
-""" 
-演示了response的follow函数中相对路径转化为绝对路径，
-并且比较了request中各个参数的异同
-"""
-
 import scrapy
-from pyquery import PyQuery
-from ..items import City58Item
 
+from pyquery import PyQuery
+from ..items import City5802Item
 from scrapy.http import Request
 
-
-class City58TestSpider(scrapy.Spider):
-    name = 'city58_test'
+class SpiderCity5802Spider(scrapy.Spider):
+    name = 'spider_city_58_02'
     allowed_domains = ['58.com']
+    # start_urls = ['http://58.com/']
     start_urls = ['http://bj.58.com/chuzu/',
                   # 'http://bj.58.com/chuzu/pn2/'
                   ]
 
+# 测试项目
+    # def parse(self, response):
+    #     print('成功进入了解析器')
+
+# 正式环境
     def parse(self, response):
         jpy = PyQuery(response.text)
         li_list = jpy('body > div.mainbox > div.main > div.content > div.listBox > ul > li').items()
@@ -39,9 +38,9 @@ class City58TestSpider(scrapy.Spider):
                                     )
             test_request3 = Request('http://58.com',
                                     callback=self.parse,
-                                    errback=self.error_back,   # 调用异常函数
-                                    priority=10,   # 优先级设为10
-                                    meta={'dont_redirect': True}   # 不用重定向
+                                    errback=self.error_back,   #调用异常函数
+                                    priority=10,   #优先级设为10
+                                    meta={'dont_redirect': True}   #不用重定向
                                     )
             test_request4 = Request('http://58.com',
                                     callback=self.parse,

@@ -1,0 +1,1 @@
+# 演示了response的follow函数中相对路径转化为绝对路径，并且比较了request中各个参数的异同

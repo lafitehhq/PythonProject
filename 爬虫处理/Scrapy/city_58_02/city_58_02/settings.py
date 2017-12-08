@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for city_58 project
+# Scrapy settings for city_58_02 project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,14 +9,14 @@
 #     http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #     http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'city_58'
+BOT_NAME = 'city_58_02'
 
-SPIDER_MODULES = ['city_58.spiders']
-NEWSPIDER_MODULE = 'city_58.spiders'
+SPIDER_MODULES = ['city_58_02.spiders']
+NEWSPIDER_MODULE = 'city_58_02.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'city_58 (+http://www.yourdomain.com)'
+#USER_AGENT = 'city_58_02 (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -33,7 +33,7 @@ ROBOTSTXT_OBEY = True
 #CONCURRENT_REQUESTS_PER_IP = 16
 
 # Disable cookies (enabled by default)
-COOKIES_ENABLED = True  # True时cookies将会发送给web server
+#COOKIES_ENABLED = False
 
 # Disable Telnet Console (enabled by default)
 #TELNETCONSOLE_ENABLED = False
@@ -46,17 +46,14 @@ COOKIES_ENABLED = True  # True时cookies将会发送给web server
 
 # Enable or disable spider middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
-SPIDER_MIDDLEWARES = {
-   # 'city_58.middlewares.MiddlewareMiddleware': 543, # 原装默认中间件
-   'city_58.middlewares.UAMiddleware': 543,  # UAMiddleware中间件
-   # 'city_58.middlewares.RetryMiddleware': 544,  # RetryMiddleware中间件
-   # 'city_58.middlewares.CookiesMiddleware': 545,  # CookiesMiddleware中间件
-}
+#SPIDER_MIDDLEWARES = {
+#    'city_58_02.middlewares.City5802SpiderMiddleware': 543,
+#}
 
 # Enable or disable downloader middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'city_58.middlewares.MyCustomDownloaderMiddleware': 543,
+#    'city_58_02.middlewares.MyCustomDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -67,10 +64,8 @@ SPIDER_MIDDLEWARES = {
 
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
-# 激活管道
-
 ITEM_PIPELINES = {
-   'city_58.pipelines.City58Pipeline': 300,
+   'city_58_02.pipelines.City5802Pipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
