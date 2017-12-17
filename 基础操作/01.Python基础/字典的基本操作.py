@@ -2,9 +2,9 @@
 
 # --创建-- #
 dirt_empty = {}
-dirt_bierce = {{"Name": "Vito",
+dirt_bierce = {"Name": "Vito",
 "Age": "25",
-"General": "Male"]
+"General": "Male"
 }
 print(dirt_bierce)  # 打印所有键值对
 print('--'*5)
