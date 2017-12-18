@@ -1,0 +1,21 @@
+<!--示例一:显示一个定义好的html主页-->
+{#<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"#}
+{#        "http://www.w3.org/TR/html4/loose.dtd">#}
+{#<html>#}
+{#<head>#}
+{#    <title>欢迎光临</title>#}
+{#</head>#}
+{#<body>#}
+{#    Django模板测试#}
+{#</body>#}
+{#</html>#}
+
+
+<!--示例二:显示一个基本的字符串在网页上-->
+{#{{ string }}#}
+
+<!--示例三:基本的 for 循环 和 List内容的显示-->
+教程列表：
+{% for i in TutorialList %}
+{{i}}
+{% endfor %}

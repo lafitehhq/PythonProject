@@ -13,17 +13,24 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
-from django.conf.urls import url
+from django.conf.urls import url, include
 from django.contrib import admin
 
-from testapp_urls import views as testapp_urls_views
-
+# from testapp_urls import views as testapp_urls_views
+from testapp_templates import views as testapp_templates_views
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-    url(r'^$', testapp_urls_views.index),  # 测试主页的显示
-    url('add/', testapp_urls_views.add, name='add'),  # 测试/add/3/4/ 这样的网址的方式跳转,访问连接：http://127.0.0.1:9999/add/?a=4&b=5
-    url(r'^add2/(\d+)/(\d+)/$', testapp_urls_views.add2, name='add2'),  # 测试有 /add/4/5/ ，访问时就会自动跳转到新的/new_add/4/5
+    # url(r'^admin/', admin.site.urls),  # 测试默认的主页显示
+
+    # # 测试testapp_url的配置
+    # url('add/', testapp_urls_views.add, name='add'),  # 测试网址跳转1.0:a=4&b=5 ;访问连接：http://127.0.0.1:8000/add/?a=4&b=5
+    # url(r'^add/(\d+)/(\d+)/$', testapp_urls_views.add2, name='add2'),  # 测试网址跳转2.0:/add/4/5/ ;访问连接：http://127.0.0.1:8000/add/4/5/
+    # url(r'^$', testapp_urls_views.index),  # 测试自己编写的主页显示
+    # # 测试网址跳转3.0
+
+    # 测试testapp_templates的配置
+    url(r'^$', testapp_templates_views.home, name='home'),
+
 ]
 
 
