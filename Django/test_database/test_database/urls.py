@@ -1,4 +1,4 @@
-"""test_templates URL Configuration
+"""test_database URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/1.11/topics/http/urls/
@@ -16,9 +16,6 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
-from test_tmpl import views as test_tmpl_views
-
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', test_tmpl_views.home, name='home')
 ]
