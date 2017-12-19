@@ -1,3 +1,4 @@
+<!--示例一:显示一个定义好的html主页-->
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
         "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -5,6 +6,80 @@
     <title>欢迎光临</title>
 </head>
 <body>
-    Django模板测试
+<!--示例二:显示一个基本的字符串在网页上-->
+{#    Django模板测试#}
+
+<!--示例二:显示一个基本的字符串在网页上-->
+{#    {{ string }}#}
+
+
+<!--示例三:基本的 for 循环 和 List内容的显示-->
+{#    教程列表：#}
+{#    {% for i in TutorialList %}#}
+{#    {{i}}#}
+{#    {% endfor %}#}
+
+
+<!--示例四:在模板进行条件判断和for循环-->
+{#for循环1.0：不包含元素判断#}
+{#    {% for item in List %}#}
+{#        {{ item }},#}
+{#    {% endfor %}#}
+{#for循环2.0：包含元素判断#}
+{#    {% for item in List %}#}
+{#        {{ item }}{% if not forloop.last %},{% endif %}#}
+{#    {% endfor %}#}
+{#for循环3.0：当列表中可能为空值时用 for empty报错#}
+{#    <ul>#}
+{#    {% for athlete in athlete_list %}#}
+{#        <li>{{ athlete.name }}</li>#}
+{#    {% empty %}#}
+{#        <li>抱歉，列表为空</li>#}
+{#    {% endfor %}#}
+{#    </ul>#}
+
+
+<!--示例五:遍历字典-->
+{#    站点：{{ info_dict.site }} 内容：{{ info_dict.content }}#}
+
+
+<!--示例六:模板中的逻辑操作-->
+{#    {% if var >= 90 %}#}
+{#        成绩优秀，学得不错#}
+{#    {% elif var >= 80 %}#}
+{#        成绩良好#}
+{#    {% elif var >= 70 %}#}
+{#        成绩一般#}
+{#    {% elif var >= 60 %}#}
+{#        需要努力#}
+{#    {% else %}#}
+{#        不及格！#}
+{#    {% endif %}#}
+
+
+<!--示例七:模板中获取当前用户-->
+{# 获取当前用户1.0：#}
+{#    {{ request.user }}#}
+{# 获取当前用户2.0：登陆就显示内容，不登陆就不显示内容#}
+{#    {% if request.user.is_authenticated %}#}
+{#        {{ request.user.username }}，您好！#}
+{#    {% else %}#}
+{#        请登陆，这里放登陆链接#}
+{#    {% endif %}#}
+
+
+<!--示例八:获取当前网址-->
+{# 获取当前网址1.0 #}
+{#    {{ request.path }}#}
+{# 获取当前网址2.0：获取当前 GET 参数#}
+{#    {{ request.GET.urlencode }}#}
+{# 获取当前网址3.0：判断 delete 参数是不是 1 来删除当前的页面内容#}
+    <a href="{{ request.path }}?{{ request.GET.urlencode }}&delete=1">当前网址加参数 delete</a>
+
 </body>
 </html>
+
+
+
+
+
