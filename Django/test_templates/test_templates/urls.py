@@ -16,9 +16,9 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
-from test_tmpl import views as test_tmpl_views
+from test_database import views as test_database_views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', test_tmpl_views.home, name='home')
+    url(r'^userInfor/', test_database_views.userInfor),
 ]
