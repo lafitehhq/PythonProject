@@ -13,12 +13,12 @@ def userInfo(req):
         # print("username", u)
         # print("sexual", s)
         # print("email", e)
+        # return render(req, "index.html")
         # 示例二：
         user = {"username": u, "sexual": s, "email": e}
         user_list.append(user)  # append()方法将字典存放入列表
+    return render(req, "index.html", {"user_list": user_list})
 
-        return render(req, "index.html", {"user_list": user_list})
-    return render(req, "index.html")
 
 
 

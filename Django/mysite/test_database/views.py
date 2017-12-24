@@ -2,20 +2,7 @@ from django.shortcuts import render
 
 # Create your views here.
 
-# 示例一：提交数据并展示
-# info_list = []
-# def userInfor(req):
-#     if req.method == "POST":
-#         username = req.POST.get("username",None)
-#         sex = req.POST.get("sex",None)
-#         email = req.POST.get("email",None)
-#
-#         info = {"username": username, "sex": sex, "email": email}
-#         info_list.append(info)
-#     return render(req, "userInfor.html", {"info_list": info_list})
-
-
-# 示例二：提交数据并展示(数据库)
+# 提交数据并展示(数据库)
 from test_database import models
 def userInfor(req):
     if req.method == "POST":
@@ -27,7 +14,7 @@ def userInfor(req):
             # models.UserInfor.objects.create(**info)
        #---------表中插入数据方式二
         models.UserInfor.objects.create(
-            username=u,
+            username=u,  # 将插入username字段
             sex=s,
             email=e
         )

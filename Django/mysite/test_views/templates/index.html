@@ -5,7 +5,7 @@
     <title>Title</title>
 </head>
 <body>
-{#示例一：#}
+{#示例一：前端显示输入的数据#}
     <form action="/userInfo/" method="post"> <!--# 表单说明后端的路径，以post方式传输。-->
         <p>姓名<input type="text" name="username"></p>
         <p>性别<input type="text" name="sexual"></p>
@@ -13,18 +13,25 @@
         <p><input type="submit" value="submit"></p>
     </form>
 
-{#示例二：接受返回的输入数据#}
+{#示例二：前端接受数据，后端接收后返回前端输入的数据#}
     <hr>
     <h1>数据展示</h1>
-    <table>
+    <table border="1px">
         <tr>
             <td>姓名</td>
             <td>性别</td>
             <td>邮箱</td>
         </tr>
-        <tr>
-
-        </tr>
+    {#模板语言的写法:把python嵌入到html语言中#}
+        {#user_list是后端传给前端的对象(还没被渲染)#}
+        {%  for i in user_list%}
+            <tr>
+                {#注意：对象用{{ }}括起来,username,sexual,email不能换成变量#}
+                <td>{{ i.username }}</td>
+                <td>{{ i.sexual }}</td>
+                <td>{{ i.email }}</td>
+            </tr>
+        {%  endfor%}
     </table>
 </body>
 </html>
