@@ -127,4 +127,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = '/static/'  # 前端用static定义就可以映射到后端的statics文件夹，无论后端的文件夹名称如何变化都不影响
+
+STATICFILES_DIRS = (  # 效果：登录http://127.0.0.1:8080/userInfo/，h1标签的字体变成红色；且存放静态文件的文件夹重命名后只要修改下面的""内容，前端不用修改。
+    os.path.join(BASE_DIR, "statics"),
+)

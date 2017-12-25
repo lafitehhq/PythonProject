@@ -30,13 +30,22 @@ urlpatterns = [
 # 02.Django学习之视图函数
     # 示例一：提交数据并展示到控制台
     # url(r"userInfo", test_views_views.userInfo),  # 打开浏览器连接：http://127.0.0.1:8080/userInfo/，输入信息提交后会在控制台会显示输入信息
-    # 示例二：提交数据并展示到前端
-    # url(r'^userInfor/', test_database_views.userInfor),  # 打开浏览器连接：http://127.0.0.1:8080/userInfo/，输入信息提交后会在控制台会显示输入
+    # 示例二：settings的配置，读取文件夹中的静态文件
+    # url(r"userInfo", test_views_views.userInfo),  # 同上
+    # 示例三：
+    # url(r'^articles/2003/$', test_views_views.totalmatch),  # 完全匹配：以articles/2003/全匹配；打开浏览器连接：http://127.0.0.1:8080/articles/2003/，显示totlmatch函数中的内容
+    # url(r'^articles/[0-9]{4}/$', test_views_views.partialmatch_1),  # 部分匹配：以articles开头，以4位0-9组成的字符结尾的；打开浏览器连接：http://127.0.0.1:8080/articles/1992/，显示partialmatch函数中的内容
+    url(r'^articles/([0-9]{4})/$', test_views_views.partialmatch_2),  # 把url输入的路径参数传入到视图函数
+    # url(r'^articles/([0-9]{4})/([0-9]{2})/$', test_views_views.month_archive),
+    # url(r'^articles/([0-9]{4})/([0-9]{2})/([0-9]+)/$', test_views_views.article_detail),
 
 # 03.Django学习之数据库
     # 控制台输入创建数据库：python3 manage.py makemigrations；python3 manage.py migrate。 db.sqlite3会生成test_database_userinfor的表
-    # 示例一：提交数据后插入至数据库，前端展示所有的数据库信息
-    url(r'^userInfor/', test_database_views.userInfor),  # 打开浏览器连接：http://127.0.0.1:8080/userInfor/，输入信息提交后会在控制台会显示输入,并且数据库会插入输入的数据
+    # 示例一：提交数据后插入至数据库
+    # url(r'^userInfor/', test_database_views.userInfor),  # 打开浏览器连接：http://127.0.0.1:8080/userInfor/，输入信息提交后会在控制台会显示输入,并且数据库会插入输入的数据
+    # 示例二：前端展示所有的数据库信息
+    # url(r'^userInfor/', test_database_views.userInfor),  # 同上
+
 
     # Django学习之视图函数
 #     url(r"login", views.login),

@@ -33,5 +33,11 @@
             </tr>
         {%  endfor%}
     </table>
+
+{# 前端用static定义就可以映射到后端的statics文件夹，无论后端的文件夹名称如何变化都不用改前端的html代码#}
+<script src="/static/jquery-2.1.1.min.js"></script>
+<script>
+    $("h1").css("color", "red")
+</script>
 </body>
 </html>

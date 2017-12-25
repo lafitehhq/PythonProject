@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, HttpResponse
 
 # Create your views here.
 
@@ -19,6 +19,16 @@ def userInfo(req):
         user_list.append(user)  # append()方法将字典存放入列表
     return render(req, "index.html", {"user_list": user_list})
 
+# 示例三：
+# 测试url全匹配
+def totalmatch(req):
+    return HttpResponse("测试-url全匹配")
+# 测试url条件匹配
+def partialmatch_1(req):
+    return HttpResponse("测试-url条件匹配")
+# 测试url路径参数传入到视图函数
+def partialmatch_2(req, y):
+    return HttpResponse("路径参数"+y+"传入到视图函数")
 
 
 

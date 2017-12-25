@@ -9,15 +9,13 @@ def userInfor(req):
         u = req.POST.get("username", None)
         s = req.POST.get("sex", None)
         e = req.POST.get("email", None)
-       #---------表中插入数据方式一
-            # info={"username":u,"sex":e,"email":e}
-            # models.UserInfor.objects.create(**info)
-       #---------表中插入数据方式二
+        #  示例一：-----向数据库中插入数据-----
         models.UserInfor.objects.create(
             username=u,  # 将插入username字段
             sex=s,
             email=e
         )
+        #  示例二：-----向数据库中插入数据后并把数据展示之前端-----
         info_list = models.UserInfor.objects.all()
         return render(req, "userInfor.html", {"info_list": info_list})
     return render(req, "userInfor.html")
