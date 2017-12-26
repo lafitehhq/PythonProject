@@ -5,11 +5,10 @@
     <title>Title</title>
 </head>
 <body>
-
+{#action参数将数据交给login函数处理，方式是POST#}
     <form action="/login/" method="post">
         <p>姓名<input type="text" name="username"></p>
-        <p>性别<input type="text" name="sex"></p>
-        <p>邮箱<input type="text" name="email"></p>
+        <p>密码<input type="password" name="userpassword"></p>
         <p><input type="submit" value="submit"></p>
     </form>
 

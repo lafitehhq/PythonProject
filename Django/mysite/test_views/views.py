@@ -20,26 +20,45 @@ def userInfo(req):
     return render(req, "index.html", {"user_list": user_list})
 
 # 示例三：
-# 测试url全匹配
+    # 测试url全匹配
 def totalmatch(req):
     return HttpResponse("测试-url全匹配")
-# 测试url条件匹配
+    # 测试url条件匹配
 def partialmatch_1(req):
     return HttpResponse("测试-url条件匹配")
-# 测试url路径参数传入到视图函数
+    # 测试url路径参数(一个)传入到视图函数
 def partialmatch_2(req, y):
     return HttpResponse("路径参数"+y+"传入到视图函数")
+    # 测试url路径参数（两个）传入到视图函数
+def partialmatch_3(req, y, m):
+    return HttpResponse(y + "年" + m + "月")
+    # 测试url路径参数（两个）传入到视图函数升级版
+def partialmatch_4(req, year, month):
+    return HttpResponse(month + "月" + year + "年")
+
+# 示例四：登录跳转
+def login(req):
+    if req.method == "POST":
+        name = req.POST.get('username')
+        pwd = req.POST.get('userpassword')
+        if name == 'Vito' and pwd == '123':
+            return HttpResponse("登录成功")  # 如果信息符合则跳转该提示
+        else:
+            return HttpResponse("账号密码错误，请重新登录")
+    return render(req, 'login.html')
 
 
 
-# def login(req):
-#     if req.method == "POST":
-#         if 1:
-#             # return redirect("/yuan_back/")
-#             name = "yuanhao"
-#             return render(req, "my backend.html", locals())
-#     return render(req, "login.html", locals())
-#
+
+
+
+
+    #     if 1:
+    #         # return redirect("/yuan_back/")
+    #         name = "yuanhao"
+    #         return render(req, "my backend.html", locals())
+    # return render(req, "login.html", locals())
+
 # def yuan_back(req):
 #     name = "苑昊"
 #     return render(req, "my backend.html", locals())

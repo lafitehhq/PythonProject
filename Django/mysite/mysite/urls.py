@@ -34,10 +34,14 @@ urlpatterns = [
     # url(r"userInfo", test_views_views.userInfo),  # 同上
     # 示例三：
     # url(r'^articles/2003/$', test_views_views.totalmatch),  # 完全匹配：以articles/2003/全匹配；打开浏览器连接：http://127.0.0.1:8080/articles/2003/，显示totlmatch函数中的内容
-    # url(r'^articles/[0-9]{4}/$', test_views_views.partialmatch_1),  # 部分匹配：以articles开头，以4位0-9组成的字符结尾的；打开浏览器连接：http://127.0.0.1:8080/articles/1992/，显示partialmatch函数中的内容
-    url(r'^articles/([0-9]{4})/$', test_views_views.partialmatch_2),  # 把url输入的路径参数传入到视图函数
-    # url(r'^articles/([0-9]{4})/([0-9]{2})/$', test_views_views.month_archive),
+    # url(r'^articles/[0-9]{4}/$', test_views_views.partialmatch_1),  # 部分匹配：以articles开头，以4位0-9组成的字符结尾的；打开浏览器连接：http://127.0.0.1:8080/articles/1992/，显示partialmatch_1函数中的内容
+    # url(r'^articles/([0-9]{4})/$', test_views_views.partialmatch_2),  # 把url输入的路径参数（一个）传入到视图函数（在传入参数外用小括号括起来）：以articles开头，以4位0-9组成的字符结尾的；打开浏览器连接：http://127.0.0.1:8080/articles/1992/，显示partialmatch_2函数中的内容
+    # url(r'^articles/([0-9]{4})/([0-9]{2})/$', test_views_views.partialmatch_3),  # # 把url输入的路径参数（两个）传入到视图函数（在传入参数外用小括号括起来）：以articles开头，以4位0-9组成的字符加以2位0-9组成的字符结尾的；打开浏览器连接：http://127.0.0.1:8080/articles/1992/07，显示partialmatch_3函数中的内容
+    # url(r'^articles/(?P<year>[0-9]{4})/(?P<month>[0-9]{2})/$', test_views_views.partialmatch_4),  # 同上，优化了views中传参必须按顺序的缺点，用?P<>为参数起别名；打开浏览器连接：http://127.0.0.1:8080/articles/1992/07，显示partialmatch_4函数中的内容
     # url(r'^articles/([0-9]{4})/([0-9]{2})/([0-9]+)/$', test_views_views.article_detail),
+    # 示例四：登录展示
+    url(r'^login', test_views_views.login, name='Vito')  # 前端html输入表单信息后跳转至HttpResponse展示页；打开浏览器连接：http://127.0.0.1:8080/login/，输入Vito 123提交后跳至登录成功提示
+
 
 # 03.Django学习之数据库
     # 控制台输入创建数据库：python3 manage.py makemigrations；python3 manage.py migrate。 db.sqlite3会生成test_database_userinfor的表
