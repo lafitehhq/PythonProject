@@ -5,12 +5,24 @@
     <title>Title</title>
 </head>
 <body>
-{#action参数将数据交给login函数处理，方式是POST#}
+{#示例一：登录1.0：绝对路径法#}
+{#action参数将数据交给login路径处理，方式是POST。#}
+{#特点：传参的路径是写死的，后端的views.py中的函数改变前端也要改变#}
     <form action="/login/" method="post">
         <p>姓名<input type="text" name="username"></p>
         <p>密码<input type="password" name="userpassword"></p>
-        <p><input type="submit" value="submit"></p>
+        <p><input type="submit" value="submit登录1.0"></p>
     </form>
+
+{#示例二：登录2.0：别名法#}
+{#action参数将数据交给url.py中含有参数是“Yanina”函数，模板语言会将 {% url "Yanina" %} 替换成 "pay/login/给前端" #}
+{#特点：传参路径不会因为后端的views.py中的函数改变而改变，只要urls.py不变即可#}
+    <form action={% url "Yanina" %}  method="post">
+        <p>姓名<input type="text" name="username"></p>
+        <p>密码<input type="password" name="userpassword"></p>
+        <p><input type="submit" value="submit登录2.0"></p>
+    </form>
+
 
 </body>
 </html>

@@ -37,7 +37,8 @@ def partialmatch_4(req, year, month):
     return HttpResponse(month + "月" + year + "年")
 
 # 示例四：登录跳转
-def login(req):
+    # 测试登录提交表单页面并跳转，在前端html中可以设置指定具体的url或含有某参数的url
+def login_1(req):
     if req.method == "POST":
         name = req.POST.get('username')
         pwd = req.POST.get('userpassword')
@@ -46,6 +47,20 @@ def login(req):
         else:
             return HttpResponse("账号密码错误，请重新登录")
     return render(req, 'login.html')
+
+def login_2(req):
+    if req.method == "POST":
+        name = req.POST.get('username')
+        pwd = req.POST.get('userpassword')
+        if name == 'Yanina' and pwd == '123':
+            return HttpResponse("登录成功")  # 如果信息符合则跳转该提示
+        else:
+            return HttpResponse("账号密码错误，请重新登录")
+    return render(req, 'login.html')
+
+# 示例五：全局配置
+    def introduce(req):
+        return HttpResponse("测试全局配置成功")
 
 
 
