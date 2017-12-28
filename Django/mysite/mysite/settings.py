@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
 
     'blog',
+    'test_urls',
     'test_views',
     'test_database',
     'test_templates',
