@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    /*知识点1：递增(＋＋) 、递减(－－)*/
+    //先打印或赋值后加减
+    var a=1;
+    var b = a++; //b=1 a=2
+    var c = ++b; //c=2 b=2
+    var d=1;
+    alert(d++); //打印d=1  2
+    alert(++d); //打印d=3  3
+    alert(d--); //打印d=3  2
+    alert(--d); //打印d=1  1
+    /*知识点2：一元加减法*/
+    var a=3;
+    var a="3"
+
+
+    /*关系运算符*/
+    //比较运算符两侧如果一个是数字类型,一个是其他类型,会将其类型转换成数字类型.
+    //比较运算符两侧如果都是字符串类型,比较的是最高位的asc码,如果最高位相等,继续取第二位比较.
+    alert("25" > 3);
+    alert("25" > "3");
+
+    /*关系运算符*/
+    var temp=0;// false;[];0; null; undefined;object(new Object();)
+
+    if(temp){
+        alert("true")
+    }else {
+        alert("false")
+    }
+
+</script>
+</body>
+</html>

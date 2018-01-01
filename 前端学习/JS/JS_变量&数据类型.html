@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--引入方式1：引用外部的js文件-->
+    <!--<script src="JS.js"></script>-->
+</head>
+<body>
+
+    <!--引入方式2：通过script标签在body内声明 注意：每句之后添加分号；-->
+    <script>
+    /*知识点1：变量
+    注意：局部变量用var声明；全局变量可以不用va人声明
+    变量声明规则：建议使用匈牙利标记法：驼峰命名变量且在开头声明变量类型*/
+        var fnum1=3.2;
+        var sname="Vito";
+        var ia=1, ib=3; //单行声明多个变量
+        alert(fnum1)
+    /*知识点2：5种数据类型*/
+        //01.Number：包括整型和浮点型(NaN在表达式运算中除了!=，结果一定是false)
+        alert(NaN==0); //False
+        alert(NaN>0);
+        alert(NaN<0);
+        alert(NaN==NAN);
+        alert(NaN!=NaN); //
+        //02.String：字符串类型,通过单引号或双引号构成
+        var str="\u4f60\u597d\n欢迎来到\"JavaScript世界\"";
+        alert(str);
+        //03.Boolean：布尔类型用于条件判断,true和false，也代表1和0，实际运算中true=1,false=0
+        if (true){
+            alert('success!')
+        }
+        //04.Undefined ：指只声明但没有对其赋值的变量 注意：只有一个值undefined
+        var c;
+        alert(c); // undefined
+        //05.Null：用于占用一个对象的位置
+        var d= new Animal();
+        var e=null;
+    /*知识点3：数据类型的转换：*/
+        //函数parseInt()：强制转换成整数
+        parseInt("6.12"); //6
+        parseInt("12a"); //12
+        parseInt("a12"); //NaN：当字符串转换成数字失败时会显示NaN，属于Number类型
+        parseInt("1a2"); //1
+        //函数parseFloat()：强制转换成浮点数
+        parseFloat("6.12")=6.12;
+        //函数eval:将字符串强制转换为表达式并返回结果
+        eval("1+1")=2 ;
+        eval("1<2")=true
+
+
+    /*知识点1：*/
+    </script>
+</body>
+</html>

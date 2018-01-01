@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*11种内置对象*/
+    /*01.Array:*/
+    /*02.String:*/
+        var s1 = "hello";
+        var s2 = new String("hello"); // 同上，String实例化
+        alert(s1);
+        alert(s2);
+    /*03.Data:*/
+    /*04.Math:*/
+    /*05.Boolean:*/
+    /*06.Number:*/
+    /*07.Function:*/
+    //知识点1：函数的创建方式
+        //创建方式1（推荐）：
+        function func1() {
+            alert("创建方式1");
+            return 8
+        }
+        var ret=func1();
+        alert(ret);
+        //创建方式2（不推荐）：表明函数是一个对象 注意：Function要大写
+        var add=new Function("a", "b", "alert(a+b)");
+        add(2,4);
+        alert(add.length);  //显示函数参数的个数
+    //知识点2：函数的的属性和方法
+
+    //知识点3：函数的的调用
+    //知识点4：函数的内置对象arguments
+        function add(a,b){
+            console.log(a+b);//3
+            console.log(arguments.length);//2
+            console.log(arguments);//[1,2]
+        }
+        add(1,2);
+        //------------------arguments的用处1 ------------------
+        function nxAdd(){
+            var result=0;
+            for (var num in arguments){
+                result+=arguments[num]
+            }
+            alert(result)
+        }
+        nxAdd(1,2,3,4,5);
+        //------------------arguments的用处2 ------------------
+        function f(a,b,c){
+            if (arguments.length!=3){
+                throw new Error("function f called with "+arguments.length+" arguments,but it just need 3 arguments")
+            }
+            else {
+                alert("success!")
+            }
+        }
+        f(1,2,3,4,5)
+    //知识点5：函数的匿名函数
+        // 匿名函数
+        var func5 = function(arg){
+            alert(123)
+        };
+        func5();
+    //知识点6：函数的自执行函数 格式：(匿名函数)(传参)
+        (var func6 = function(arg){
+            console.log(arg);
+        })('123')
+
+
+
+    /*08.Global:*/
+    /*09.Error:*/
+    /*10.RegExp:*/
+    /*11.Object:*/
+</script>
+</body>
+</html>

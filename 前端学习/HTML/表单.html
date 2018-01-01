@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!--12.1：action标签：跳转要访问的服务端的网址 -->
+    <!--12.2：method标签：以get或post方式提交-->
+        <!--get方式：提交的键值对用&拼接成字符串后放在url之后。后端接收的数据一个无序字典-->
+        <!--post方式：提交的键值对放在请求体内。默认回车都是以get方式提交内容。后端接收的数据一个无序字典-->
+    <!--12.3：enctype标签：-->
+    <form action="127.0.0.1:8090" method="post" enctype="multipart/form-data">
+        <!---12.4：input标签（输入标签）->
+            <!-- 属性1：text:文本输入-->
+        <p>姓名：<input type="text" name="username"></p>
+        <p>邮箱：<input type="text" name="email"></p>
+            <!-- 属性2：password:密码隐藏输入-->
+        <p>密码：<input type="password" name="password"></p>
+            <!-- 属性3：submit:提交数据-->
+        <p><input type="submit" value="提交"></p>
+            <!-- 属性4：button:显示效果同submit，但没有上传数据的功能，一般配合js作触发用-->
+        <p><input type="button" value="按钮"></p>
+            <!-- 属性5：checkbox:复选框 注意：所有的选项存放到一个列表，该列表作为字典的值，hobbies作为字典的键-->
+        <p>爱好：篮球<input type="checkbox" name="hobbies"> &nbsp; 足球<input type="checkbox"> </p>
+            <!-- 属性6：radio:单选框 注意：配合name属性使用，该属性是发送给server键，只有键相同才能起互斥的效果-->
+        <p>性别：男<input type="radio" name="sexual"> &nbsp; 女<input type="radio" name="sexual"> </p>
+            <!-- 属性7：file:弹出上传文件 name作为文件的键,req.files对象作为值。注意：可用以下方式读取该对象-->
+            <!--
+                for item req.FILES:
+                    obj=req.FILES.get(item,None) # 防止对象为空
+                    filename=obj.name
+                    f=open(filename,'wb')  # 注意：用wb方式
+                    for line in obj.chunks():  # chunks()方法用于从对象中取数据，按每一行64K取，
+                        f.write(line)  # 循环写入每一行
+                    f.close
+            -->
+        <p><input type="file" name="Vito_uplode"></p>
+        <p><input type="submit" value="提交"></p>
+            <!-- 属性8：reset:重置页面所有的输入框中的信息 注意：不是刷新页面-->
+        <p><input type="reset" value="重置所有信息"></p>
+        <!--12.5：select标签（选择发送后以键(city)值(shenzhen)对的字典的形式发送给服务端）-->
+            <!--单选下拉框 注意：要和option标签组合使用-->
+        <p>出生地：
+            <select name="city01">
+                <option value="bajing">北京</option>
+                <option value="shanghai">上海</option>
+                <option value="guangzhou">广州</option>
+                <option value="shenzhen">深圳</option>
+            </select>
+            <!--多选下拉框：size属性:最多显示两项属性 注意：要和option标签组合使用-->
+            城市：
+            <select name="city02" multiple="multiple" size="2">
+                <option value="bajing">北京</option>
+                <option value="shanghai">上海</option>
+                <option value="guangzhou">广州</option>
+                <option value="shenzhen">深圳</option>
+            </select>
+        </p>
+        <p><input type="submit" value="提交"></p>
+        <!--12.6：textarea标签（输入文本框）-->
+        <textarea rows="20" cols="50">自我简介</textarea>
+    </form>
+</body>
+</html>
