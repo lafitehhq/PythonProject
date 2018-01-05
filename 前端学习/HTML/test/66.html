@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    $(document).ready(function() {
+        //Camera Jquery
+        $('#camera-slide').camera({
+            thumbnails: false,
+            hover: false,
+            pagination: false,
+        });
+    });
+</script>
+<!-- slideshow start here -->
+<section id="slideshow-wrapper">
+    <div class="camera_wrap" id="camera-slide">
+        <!-- slide 1 here -->
+        {volist name="adList" id="vo" key="i"}
+        {if condition='$i eq 1'}
+        <div data-src="/public/static/home/images/slideshow/bg-slide1.jpg">
+            <div class="caption-type1 moveFromLeft">
+                <h1>{$vo.name}</h1>
+                <p>{$vo.content}</p>
+                <a href="http://demo.cltphp.com/" target="_blank" title="CLTPHP演示站点" class="button-slide medium gray">演示站点</a>
+            </div>
+            <div class="caption-type1 moveFromRight">
+                <img src="/public{$vo.pic}" alt="{$vo.name}" />
+            </div>
+        </div>
+        {elseif condition='$i eq 2'}
+        <!-- slide 2 here -->
+        <div data-src="/public/static/home/images/slideshow/bg-slide2.jpg">
+            <div class="caption-type2 moveFromTop">
+                <h1>{$vo.name}</h1>
+                <p>{$vo.content}</p>
+            </div>
+            <div class="caption-type2 moveFromBottom">
+                <img src="/public{$vo.pic}" alt="{$vo.name}" />
+            </div>
+        </div>
+        {else /}
+        <!-- slide 3 here -->
+        <div data-src="/public/static/home/images/slideshow/bg-slide3.jpg">
+            <div class="caption-type3 moveFromLeft">
+                <img src="/public{$vo.pic}" alt="{$vo.name}" />
+            </div>
+            <div class="caption-type3 moveFromRight">
+                <h1>{$vo.name}</h1>
+                <p>{$vo.content}</p>
+                <!--<img src="/public/static/home/images/slideshow/slide3a.png" alt="" class="html-badge" />-->
+            </div>
+        </div>
+        {/if}
+        {/volist}
+    </div>
+</section>
+<!-- slideshow end here -->
+<!-- featured client start here -->
+<section id="featured-wrapper">
+    <div id="featured-logo-list">
+        <div class="row">
+            <div class="two columns mobile-two mobile-view">
+                <h5 class="featured-client">项目种类 :</h5>
+            </div>
+            <div class="two columns mobile-two mobile-view">
+                <img src="/public/static/home/images/sample-images/client1.png" alt="layui" />
+            </div>
+            <div class="two columns mobile-two mobile-view">
+                <img src="/public/static/home/images/sample-images/client2.png" alt="thinkphp" />
+            </div>
+            <div class="two columns mobile-two mobile-view">
+                <img src="/public/static/home/images/sample-images/client3.png" alt="angularjs" />
+            </div>
+            <div class="two columns mobile-two mobile-view">
+                <img src="/public/static/home/images/sample-images/client4.png" alt="jquery" />
+            </div>
+            <div class="two columns mobile-two mobile-view">
+                <img src="/public/static/home/images/sample-images/client5.png" alt="ztree" />
+            </div>
+        </div>
+    </div>
+</section>
+<!-- featured client end here -->
+
+<!-- maincontent start here -->
+<section id="content-wrapper">
+    <div class="row">
+        {clt:list_join db='article' dbfield='catid' id='vo' joindb='category' joinfield='id' where="posid = 1" order="listorder asc,createtime desc" limit='4'}
+        <div class="three columns mobile-two">
+            <h5><a style="{:style($vo['title_style'])}" href="{:url('home/'.$vo['catdir'].'/info',array('id'=>$vo['id'],'catId'=>$vo['catid']))}" title="{$vo.title}">{:str_cut($vo.title,12,'...')}</a></h5>
+            <div class="link-url">
+                <a href="{:url('home/'.$vo['catdir'].'/info',array('id'=>$vo['id'],'catId'=>$vo['catid']))}" target="_blank" title="{$vo.title}">
+                    <img src="{:imgUrl($vo['title_thumb'],/public/static/home.'/images/portfolio-thumb/p'.$k.'.jpg')}" alt="{$vo.title}" class="fade" />
+                </a>
+            </div>
+        </div>
+        {/clt:list_join}
+    </div>
+    <div id="featured-wrapper2">
+        <div class="row front-feature-icon">
+            {clt:list db='debris' id='list' limit="3" where="type_id = 1"}
+            <div class="four columns mobile-one">
+                <img src="/public/static/home/images/sample-images/front-icon{$k+1}.png" alt="我们的差异化" class="img-center" />
+                <h5>{$list.title}</h5>
+                <p>{$list.content}</p>
+            </div>
+            {/clt:list}
+        </div>
+    </div>
+   <!--这里插入div可以在主页footer上边加栏目-->
+</section>
+</body>
+</html>
