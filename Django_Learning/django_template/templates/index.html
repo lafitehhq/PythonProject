@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Template</h1>
+    <!------变量（使用双大括号来引用变量）的使用--------->
+    <!--模板语言--变量（使用双大括号来引用变量）
+    浏览器打开http://127.0.0.1:8000/index/，前端页面会输出指定的后端传值类型
+    -->
+    <!--打印列表中某个元素-->
+    {{obj_list.2 }}
+    <!--打印字典中某个键/值-->
+    {{obj_dir.username }}
+    {{obj_dir.age }}
+    <!--打印函数中的返回值-->
+    {{obj_fun }}
+    {{obj_fun.year }} <!--年月份时间-->
+    {{obj_fun.year }} <!--年-->
+    <!--打印自定义类的传参值-->
+    {{obj_class.name }}
+    {{obj_class.age }}
+
+    <!----------------标签(tag)的使用---------------->
+    <!--模板语言--if条件语句
+    浏览器打开http://127.0.0.1:8000/index/，前端页面会输出指定的后端传值类型
+    -->
+    <!--if条件测试-->
+    {% if False %}
+        <p>测试</p>
+    {% elif True %}
+        <p>测试2</p>
+    {% endif  %}
+
+    <!--模板语言--for循环语句
+    浏览器打开http://127.0.0.1:8000/index/，前端页面会输出指定的后端传值类型
+    -->
+    {% for i in obj_list %}
+        <p>{{i }}</p> <!--循环打印列表值-->
+    {% endfor %}
+    {% for i in obj_list %}
+        <p>{{ forloop.counter }}：{{i }}</p> <!--循环打印列表下标与列表值（键从1开始）-->
+    {% endfor %}
+    {% for i in obj_list %}
+        <p>{{ forloop.counter0 }}：{{i }}</p> <!--循环打印列表下标与列表值（键从0开始）-->
+    {% endfor %}
+    {% for i in obj_list %}
+        <p>{{ forloop.revcounter }}：{{i }}</p> <!--循环打印列表下标与列表值（倒序）-->
+    {% endfor %}
+    {% for i in obj_list %}
+        <p>{{ forloop.revcounter0 }}：{{i }}</p> <!--循环打印列表下标与列表值（倒序至0）-->
+    {% endfor %}
+
+    {% for i in obj_dir %}
+        <p>{{ i }}</p> <!--循环打印字典的键-->
+    {% endfor %}
+    {% for i in obj_dir.items %}
+        <p>{{ i }}</p> <!--循环打印字典键与值-->
+    {% endfor %}
+
+    <!--模板语言--渲染器
+    浏览器打开http://127.0.0.1:8000/index/，前端页面会输出指定的后端传值类型
+    -->
+    {% autoescape off %}
+        {{ obj_code }} <!--后端渲染前端代码-->
+    {% endautoescape %}
+
+    <!--模板语言--常用过滤器filter
+    浏览器打开http://127.0.0.1:8000/index/，前端页面会输出指定的后端传值类型
+    -->
+    {{ obj_str|upper }} <!--将输出内容改成全大写-->
+    {{ obj_str|lower }} <!--将输出内容改成全小写-->
+    {{ obj_str|capfirst }} <!--将输出内容改成首字母大写-->
+    {{ obj_fun|date:"Y-m-d"}} <!--将输出内容按日期格式输出-->
+
+
+
+
+</body>
+</html>
