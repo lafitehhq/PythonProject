@@ -21,4 +21,12 @@ from app01 import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^index/', views.index),
+    url(r'^index2/', views.index2),
+    url(r'^index3/', views.index3),
+    url(r'^login/', views.login),
+    url(r'^ordered/', views.ordered),
+    url(r'^shopping_car/', views.shopping_car),
+    url(r'^ordered_1/', views.ordered_1),
+    url(r'^shopping_car_1/', views.shopping_car_1),
+
 ]

@@ -1,3 +1,7 @@
+<!--
+常用标签(tag)的使用
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,11 +10,16 @@
 </head>
 <body>
 
-<form action="/login">
-    <input type="text" name="user">
-    <input type="text" name="pwd">
-    <input type="submit" value="提交">
-</form>
+    <!--模板语言--csrf_token标签，用于防治跨站请求攻击
+    浏览器打开http://127.0.0.1:8000/login/，前端页面会显示表单
+    -->
+    <form action="/login/" method="post">
+        <input type="text" name="user">
+        <input type="text" name="pwd">
+        <input type="submit" value="提交">
+        {% csrf_token %} <!--有该标签会提交跳转成功，没有就会显示Forbidden的403错误-->
+    </form>
+
 
 
 

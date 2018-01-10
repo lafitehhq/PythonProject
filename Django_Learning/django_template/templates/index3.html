@@ -1,0 +1,28 @@
+<!--
+自定义过滤器(filter)的使用
+自定义过滤器的特点：可以使用if判断；只能传一个参数
+-->
+
+{% load my_filter %} <!--引用自定义过滤器-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!--引用自定义过滤器中的具体函数名-->
+    {{ num3|my_add100 }}
+    {{ num3|my_add:34 }}<!--注意：冒号之间不能发有空格-->
+
+    <!--自定义过滤器的特点：可以使用if判断-->
+    {% if num3|my_add:34 > 50 %}
+        <p>和大于50</p>
+    {% elif num3|my_add:34 < 50 %}
+        <p>和小于50</p>
+    {% else %}
+        <p>和等于50</p>
+    {% endif %}
+</body>
+</html>

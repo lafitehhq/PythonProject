@@ -3,7 +3,7 @@
 浏览器打开http://127.0.0.1:8000/index/，前端页面会输出指定的后端传值类型
 """
 
-from django.shortcuts import render
+from django.shortcuts import render, HttpResponse
 
 # Create your views here.
 
@@ -11,7 +11,6 @@ import datetime
 
 
 def index(req):
-
     s1 = 'hello'
     # return render(req, "index.html", {"obj_str": s1})
 
@@ -38,4 +37,34 @@ def index(req):
 
     s6 = "<a href = 'http://www.vitowong.top'>跳转至我的博客</a>"
     return render(req, "index.html", {"obj_code": s6})
+
+
+def login(req):
+    if req.method == "POST":
+        return HttpResponse("ok")
+
+    return render(req, "login.html")
+
+
+def index2(req):
+    number2 = 30
+    return render(req, "index2.html", {"num2":number2})
+
+def index3(req):
+    number3 = 50
+    return render(req, "index3.html", {"num3": number3})
+
+
+def ordered(req):
+    return render(req, "ordered.html")
+
+def shopping_car(req):
+    return render(req, "shopping_car.html")
+
+def ordered_1(req):
+    return render(req, "ordered_1.html")
+
+def shopping_car_1(req):
+    return render(req, "shopping_car_1.html")
+
 
