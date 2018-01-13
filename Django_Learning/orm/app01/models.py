@@ -38,14 +38,13 @@ class AuthorDetail(models.Model):
 # 书籍表
 class Book(models.Model):
     title = models.CharField(max_length=100)
-    authors = models.ManyToManyField(Author)
-    publisher = models.ForeignKey("Publisher")  # 一对多的关系；在书籍表建立一个关于出版社表的外键，表示一个出版社可以出多本书
-    publication_date = models.DateField()
     price = models.DecimalField(max_digits=5, decimal_places=2, default=10)
+    publication_date = models.DateField()
+    publisher = models.ForeignKey("Publisher")  # 一对多的关系；在书籍表建立一个关于出版社表的外键，表示一个出版社可以出多本书
+    authors = models.ManyToManyField(Author)
 
     def __str__(self):
         return self.title
-
 
 class Book2Author(models.Model):
     # 建立多对多关系
