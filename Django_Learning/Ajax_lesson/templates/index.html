@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <button onlick = "func1()">ajax提交</button>
+</body>
+<script>
+    //步骤1：定义XMLHttpRequest对象的创建函数
+    function createXMLHttpRequest() {
+        var xmlHttp;
+        // 适用于大多数浏览器，以及IE7和IE更高版本
+        try{
+            xmlHttp = new XMLHttpRequest();
+        } catch (e) {
+            // 适用于IE6
+            try {
+                xmlHttp = new ActiveXObject("Msxml2.XMLHTTP");
+            } catch (e) {
+                // 适用于IE5.5，以及IE更早版本
+                try{
+                    xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+                } catch (e){}
+            }
+        }
+        return xmlHttp;
+    }
+
+    function func1() {
+        //步骤2：实例化XMLHttprequest对象
+        var xmlhttp = createXMLHttpRequest()
+        xmlhttp.onreadystatechange = function(){
+            if (xmlhttp.readyState==4 && xmlhttp.status==200): { // 表示页面接收完成且状态是成功
+
+                var data=xmlhttp.requstText
+{#              alert(xmlhttp.readyState)#}
+                alert data
+                }
+            };
+
+        //步骤3：连接数据库并发送数据
+        xmlhttp.open("GET", "/ajax_receive", true)  //参数的含义：请求方式；要发送数据到达的接口；true表示采用异步方式
+        xmlhttp.send(null)
+
+        //步骤4：监听状态
+        mlhttp.onreadystatechange=function(){
+{#            alert(xmlhttp.status)  // 返回页面状态码#}
+{#            alert(xmlhttp.readyState)  //返回#}
+        }
+    }
+
+
+</script>
+</html>
