@@ -6,7 +6,7 @@ from django.db import models
 
 # 出版社表
 class Publisher(models.Model):
-    name = models.CharField(max_length=30, verbose_name="名称")
+    name = models.CharField(max_length=30, verbose_name="名称")  # 通过“verbose_name="名称"”格式+class Meta定义中文
     address = models.CharField("地址", max_length=50)
     city = models.CharField('城市', max_length=60)
     state_province = models.CharField(max_length=30)
@@ -37,11 +37,16 @@ class AuthorDetail(models.Model):
 
 # 书籍表
 class Book(models.Model):
-    title = models.CharField(max_length=100)
+    title = models.CharField(max_length=100, verbose_name="名称")
     price = models.DecimalField(max_digits=5, decimal_places=2, default=10)
     publication_date = models.DateField()
     publisher = models.ForeignKey("Publisher")  # 一对多的关系；在书籍表建立一个关于出版社表的外键，表示一个出版社可以出多本书
     authors = models.ManyToManyField(Author)
+
+    class Meta:
+        verbose_name = "书籍"
+        verbose_name_plural = verbose_name
+
 
     def __str__(self):
         return self.title
