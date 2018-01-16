@@ -22,4 +22,8 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^index/', views.index),
     url(r'^ajax_receive/', views.ajax_receive),
+
+    # url(r'^ajax_jquery/', views.ajax_jquery),
+    url(r'^jquery_test/', views.jquery_test),
+    url(r'^jquery_get/', views.jquery_get),
 ]

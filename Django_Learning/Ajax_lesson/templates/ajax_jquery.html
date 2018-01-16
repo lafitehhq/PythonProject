@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <button onclick="func1()">ajax提交</button>
+
+    <script src="/static/jquery-2.1.4.min.js"></script>
+
+
+    <!--引入静态文件-->
+
+    <script>
+        function func1() {
+            Test
+        }
+
+        function Test() {
+            /* ********************************** $.get与$.post的常用API **********************************/
+            // 1.测试$.get()方法
+{#            $.get("/jquery_test/")  //浏览器打开127.0.0.1:8000/jquery_test,点击提交按钮后，打开控制台"Network"。查看jquery_get文件可以查看请求信息#}
+            // 2.测试$.get()方法追加信息发送数据
+{#            $.get("/jauery_test/",{name:"Vito"})  //控制台"Network"中多了?name=Vito#}
+            // 3.测试$.post()方法
+{#            $.post("/jquery_test/")  //与Get方式仅仅是方式的不同#}
+            // 4.测试$.post()方法追加信息发送数据
+{#            $.get("/jquery_test/",{name:"Yanina"})  //控制台"Network"中jquery_get文件中的form data中可以查看数据#}
+            // 5.测试$.post()方法的回调函数
+{#            $.post("/jquery_test/", {name:'Leo'},function (data, stateText, obj) {#}
+{#                console.log(arguments)#}
+{#                alert(data)#}
+{#                alert(stateText)#}
+{#                alert(obj)#}
+{#            })#}
+             /* ********************************** $.getScript的常用API ***********************************/
+             //浏览器打开127.0.0.1:8000/jquery_test, 点击按钮后才会加载自定义的test.js文件中的函数
+{#            $.getScript("/static/test.js", function (){#}
+{#                alert (add(3,5))#}
+{#            })#}
+
+            /* ********************************** $.ajax的常用API**********************************/
+            //测试$.ajax()方法追加信息发送数据
+            $.ajax({
+                urls:"/jquery_test/",
+                type:"POST",
+                data:{a:111, b:234},
+                //processData:false,  //默认是true，表示对发送的数据进行转码，设置为false是表示对传送的数据不转码
+                contentType:text,
+            })
+        }
+    </script>
+</body>
+</html>

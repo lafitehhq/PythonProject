@@ -8,4 +8,15 @@ def index(req):
 
 
 def ajax_receive(req):
-    return HttpResponse("ajax_receive")
+    if req.method == 'Post':
+        print("req.POST", req.POST)
+    return HttpResponse("hello2")
+
+# 基于Jquery的Ajax的实现
+def jquery_test(req):
+    return render(req, "ajax_jquery.html")
+
+def jquery_get(req):
+    print(req.GET)
+
+    return HttpResponse("Get请求基于Jquery的Ajax的实现")

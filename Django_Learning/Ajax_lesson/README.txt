@@ -20,4 +20,16 @@
 2. JSON与JSONP
 
 3. 基于jquery的Ajax的实现
-    $.ajax()
+    3.1:$.ajax()
+
+       $.ajax({
+           url:"//",
+           data:{a:1,b:2},
+           type:"GET",
+           success:function(){}
+       })
+    3.2:$.get()
+    3.3:$.post()
+    3.4:$.getScript()
+    3.5:$.getJSON()
+
