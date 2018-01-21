@@ -21,5 +21,7 @@ from app01 import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^login.html$', views.login),
+    url(r'^login_2.html$', views.login_2),
     url(r'^index.html$', views.index),
+    url(r'^js_cookie.html', views.js_cookie),
 ]
