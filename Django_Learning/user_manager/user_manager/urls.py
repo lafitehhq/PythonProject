@@ -20,8 +20,20 @@ from app01 import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^login.html$', views.login),
-    url(r'^login_2.html$', views.login_2),
-    url(r'^index.html$', views.index),
-    url(r'^js_cookie.html', views.js_cookie),
+    # 测试cookies方式登录
+    # url(r'^login.html$', views.login),
+    # url(r'^index.html$', views.index),
+    # url(r'^js_cookie.html', views.js_cookie),
+
+    # 测试session方式登录与注销
+    # url(r'^login_2.html$', views.login_2),
+    # url(r'^index_2.html$', views.index_2),
+    # url(r'^logout_2.html$', views.logout_2),  # 注意：不用额外写logout_2.html,只要在index_2,urls.py中添加logout_2函数
+
+
+    url(r'^login_3.html$', views.auth),
+    url(r'^index_3.html$', views.index_3),
+    # url(r'^logout_3.html$', views.logout_3),
+    url(r'^classes.html$', views.handle_classes),
+    url(r'^student.html$', views.handle_student),
 ]

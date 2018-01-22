@@ -71,44 +71,47 @@ login.html  --> index.html --> views.py
     2.1.含义
         session是服务器端的一个键值对
         session内部机制依赖于cookie
-    2.2.
-        request.session['k']
-        request.session['k1'] = v
-        request.session['k2'] = v
+    2.2.session的常见操作
+        2.2.1.获取、设置、删除Session中数据
+            request.session['k1']
+            request.session.get('k1',None)
 
-        del request.session['k1']
-        request.session.clear()
+            request.session['k1'] = 123
+            request.session.setdefault('k1',123) # 存在则不设置
 
+            del request.session['k1'] # 删除某个swssion
+            request.session.clear()  # 删除所有的session
 
-    # 获取、设置、删除Session中数据
-    request.session['k1']
-    request.session.get('k1',None)
+        2.2.2.所有 键、值、键值对
+            request.session.keys()
+            request.session.values()
+            request.session.items()
+            request.session.iterkeys()
+            request.session.itervalues()
+            request.session.iteritems()
 
+        2.2.3.用户session的随机字符串session_key
+            request.session.session_key
 
+        2.2.4.将所有Session失效日期小于当前日期的数据删除,默认超时时间是14天
+            request.session.clear_expired()
 
-    request.session['k1'] = 123
-    request.session.setdefault('k1',123) # 存在则不设置
-    del request.session['k1']
+        2.2.5.检查用户session的随机字符串 在数据库中是否
+            request.session.exists("session_key")
 
-    # 所有 键、值、键值对
-    request.session.keys()
-    request.session.values()
-    request.session.items()
-    request.session.iterkeys()
-    request.session.itervalues()
-    request.session.iteritems()
+        2.2.6.删除当前用户的所有Session数据
+            request.session.delete("session_key")
 
+    2.3.session在setting.py中的设定配置
+            SESSION_ENGINE = 'django.contrib.sessions.backends.db'  # 引擎（默认）
+            SESSION_COOKIE_NAME = "sessionid"  # Session的cookie保存在浏览器上时的key，即：sessionid＝随机字符串（默认）
+            SESSION_COOKIE_PATH = "/"  # Session的cookie保存的路径（默认）
+            SESSION_COOKIE_DOMAIN = None  # Session的cookie保存的域名（默认）
+            SESSION_COOKIE_SECURE = False  # 是否Https传输cookie（默认）
+            SESSION_COOKIE_HTTPONLY = True  # 是否Session的cookie只支持http传输（默认）
+            SESSION_COOKIE_AGE = 1209600  # Session的cookie失效日期（2周）（默认）
+            SESSION_EXPIRE_AT_BROWSER_CLOSE = False  # 是否关闭浏览器使得Session过期（默认）
+            SESSION_SAVE_EVERY_REQUEST = False  # 是否每次请求都保存Session，默认修改之后才保存（默认）
 
-    # 用户session的随机字符串
-    request.session.session_key
-
-    # 将所有Session失效日期小于当前日期的数据删除
-    request.session.clear_expired()
-
-    # 检查 用户session的随机字符串 在数据库中是否
-    request.session.exists("session_key")
-
-    # 删除当前用户的所有Session数据
-    request.session.delete("session_key")
 
 

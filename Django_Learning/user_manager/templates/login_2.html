@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="login_2.html" method="post">
+        {% csrf_token %} <!--django在用户提交表单时防止跨站攻击所做的保护,加上此句可适配-->
+        <div>
+            <label for="user">用户名：</label> <!--<label> 标签为 input 元素定义标注（标记）-->
+            <input id ="user" type="text" name="user"/>
+        </div>
+        <div>
+            <label for="pwd">密码：</label>
+            <input id ="pwd" type="password" name="pwd"/>
+        </div>
+        <div>
+            <label></label>
+            <input type="submit" value="登录">
+            <span style="color: red">{{ msg}}</span>  <!--<span>标签用于接收后端传来的报错信息-->
+        </div>
+
+    </form>
+</body>
+</html>
