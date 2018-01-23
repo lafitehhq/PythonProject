@@ -4,7 +4,7 @@ from django.shortcuts import render, redirect
 
 from app01 import models
 
-# #############################################登录版本1.0#############################################
+# #############################################登录版本1.0：cookie方式登录#############################################
 
 # 1.定义cookie方式登录初始页面
 # def login(req):
@@ -59,7 +59,7 @@ from app01 import models
 #     obj.set_cookie('Yanina', 'girl')
 #     return obj
 
-# #############################################登录版本2.0#############################################
+# #############################################登录版本2.0：session方式登录#############################################
 
 # # 4.定义session方式登录初始页面
 # def login_2(req):
@@ -95,13 +95,11 @@ from app01 import models
 #     return redirect('/login_2.html')
 
 
-# #############################################登录版本3.0#############################################
+# #############################################登录版本3.0:使用装饰器+session#############################################
 
-# def login(req):
+# # 7.定义session方式登录初始页面
+# def login_3(req):
 #     message = ""
-#     v = req.session
-#     print(type(v))
-#     from django.contrib.sessions.backends.db import SessionStore
 #     if req.method == "POST":
 #         user = req.POST.get('user')
 #         pwd = req.POST.get('pwd')
@@ -110,89 +108,102 @@ from app01 import models
 #         if c:
 #             req.session['is_login'] = True
 #             req.session['username'] = user
-#             rep = redirect('/index.html')
+#             req.session['password'] = pwd
+#             rep = redirect('/index_3.html?user='+ user)
 #             return rep
 #         else:
 #             message = "用户名或密码错误"
 #     obj = render(req, 'login_3.html', {'msg': message})
 #     return obj
 #
-# def logout(req):
+# # 8.定义session方式注销初始页面
+# def logout_3(req):
 #     req.session.clear()
 #     return redirect('/login_3.html')
 #
-# # 10.装饰器实现代码复用
+# # # 9.定义session方式登录成功的跳转页面
+# # def index_3(req):
+# #     is_login = req.session.get('is_login')
+# #     if is_login:
+# #         current_user = req.session.get('username')
+# #         return render(req, 'index_3.html', {'username': current_user})
+# #     else:
+# #         return redirect('/login_3.html')
+#
+# # 10.操作前端的每个班级，学生，老师表
+# # def handle_classes(req):
+# #     # 10.1.登录认证的重复代码
+# #     is_login = req.session.get('is_login')
+# #     if is_login:
+# #         current_user = req.session.get('username')
+# #         return render(req, 'index_3.html', {'username': current_user})
+# #     else:
+# #         return redirect('/login_3.html')
+# #     # 10.2.跳转至对应的html
+# #     return render(req, 'classes.html')
+# #
+# # def handle_student(req):
+# #     return render(req, 'student.html')
+# #
+# # def handle_teacher(req):
+# #     return render(req, 'teacher.html')
+#
+# # 11.定义装饰器函数
+# # # 11.1.装饰器函数模板
+# # def auth(func):
+# #     def inner(*args, **kwargs):
+# #         return func()
+# #     return inner  # 注意：inner不用加括号
+#
+# # 11.2.定义登录验证装饰器
 # def auth(func):
 #     def inner(req, *args, **kwargs):
+#         # 获取session
 #         is_login = req.session.get('is_login')
+#         # 若登录成功(session存在)，执行func
 #         if is_login:
 #             return func(req, *args, **kwargs)
+#         # 若登陆失败，返回登录页面
 #         else:
-#             return redirect('/login_3,html')
+#             return redirect('/login_3.html')
 #     return inner
 #
 #
-# # 11.登录函数
+# # 12.定义session + 装饰器的方式登录成功的跳转页面
 # @auth
 # def index_3(req):
 #     current_user = req.session.get('username')
 #     return render(req, 'index_3.html', {'username': current_user})
 #
-# # 7.定义操作班级表
 # @auth
 # def handle_classes(req):
 #     current_user = req.session.get('username')
-#     return render(req, 'index_3.html', {'username': current_user})
+#     return render(req, 'classes.html', {'username': current_user})
 #
-# # 8.定义操作学生表
 # @auth
 # def handle_student(req):
 #     current_user = req.session.get('username')
-#     return render(req, 'student.html')
+#     return render(req, 'student.html', {'username': current_user})
 #
-# # 9.定义操作教师表
 # @auth
 # def handle_teacher(req):
 #     current_user = req.session.get('username')
-#     return render(req, 'teacher.html')
-
-def auth(func):
-    def inner(request, *args, **kwargs):
-        is_login = request.session.get('is_login')
-        if is_login:
-            return func(request, *args, **kwargs)
-        else:
-            return redirect('/login.html')
-    return inner
-
-@auth
-def index(request):
-    current_user = request.session.get('username')
-    return render(request, 'index.html',{'username': current_user})
-
-@auth
-def handle_classes(request):
-
-    current_user = request.session.get('username')
-    return render(request, 'classes.html', {'username': current_user})
+#     return render(req, 'teacher.html', {'username': current_user})
 
 
-def handle_student(request):
-    is_login = request.session.get('is_login')
-    if is_login:
-        current_user = request.session.get('username')
-        return render(request, 'student.html', {'username': current_user})
-    else:
-        return redirect('/login.html')
+# #############################################登录版本4.0:CBV方式#############################################
+from django import views
+
+class Login(views.View):
+
+    def get(self, req, *args, **kwargs):
+        pass
+    def post(self, req, *args, **kwargs):
+        pass
 
 
-def handle_teacher(request):
-    is_login = request.session.get('is_login')
-    if is_login:
-        current_user = request.session.get('username')
-        return render(request, 'teacher.html', {'username': current_user})
-    else:
-        return redirect('/login.html')
+
+
 
 
 

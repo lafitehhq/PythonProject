@@ -23,6 +23,7 @@ login.html  --> index.html --> views.py
 1.Cookie
     1.1.含义
         保存在浏览器端的键值对；可以利用做登录
+        cookie发送到服务器端依附于请求头中，返回客户端依附于响应头中
     1.2.特点
         1、保存在用户浏览器
         2、可以主动清除
@@ -70,7 +71,7 @@ login.html  --> index.html --> views.py
 2.Session：
     2.1.含义
         session是服务器端的一个键值对
-        session内部机制依赖于cookie
+        session内部机制依赖于cookie去实现
     2.2.session的常见操作
         2.2.1.获取、设置、删除Session中数据
             request.session['k1']
@@ -112,6 +113,24 @@ login.html  --> index.html --> views.py
             SESSION_COOKIE_AGE = 1209600  # Session的cookie失效日期（2周）（默认）
             SESSION_EXPIRE_AT_BROWSER_CLOSE = False  # 是否关闭浏览器使得Session过期（默认）
             SESSION_SAVE_EVERY_REQUEST = False  # 是否每次请求都保存Session，默认修改之后才保存（默认）
+
+     2.4.session比cookie的优点
+        cookie无论是普通写法还是加密写法，所有信息都存在于客户端；session只存放session id(随机字符串)于客户端，敏感信息都存放于服务器端
+
+     2.5.session的工作原理
+        客户器向服务器端发请求消息
+                ||
+        服务器端检查该客户端发来的请求里是否包含了一个SESSION ID
+                ||
+        ①：若客户端请求包含了一个SESSION ID，则说明该用户已登陆过且服务器端为该客户端创建过SESSION --> 服务器端按照这个SESSION ID把这个SESSION在服务器的内存中查找出来，如果查找不到，就新创建一个。
+        ②：若客户端请求里不包含SESSION ID，服务器端则为该客户端创建一个SESSION并生成一个与此相关的SESSION ID。
+                ||
+        SESSION ID(唯一的、不重复的、不容易找到规律的字符串)将被在本次响应中返回到客户端保存,保存这个SESSION ID的正是COOKIE
+                ||
+        再次访问时，SESSION ID(作为key)在服务器中找SESSION(作为value)
+
+
+
 
 
 
