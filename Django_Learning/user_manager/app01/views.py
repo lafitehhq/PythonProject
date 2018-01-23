@@ -195,11 +195,29 @@ from app01 import models
 from django import views
 
 class Login(views.View):
-
+    # GET方法，获取的是空字符串
     def get(self, req, *args, **kwargs):
-        pass
+        return render(req, 'login_3.html', {{'msg': ''}})
+
+    # POST方法
     def post(self, req, *args, **kwargs):
-        pass
+        # 获取的是提交的信息
+        user = req.POST.get('user')
+        pwd = req.POST.get('pwd')
+        # 到数据库检测时候有账户
+        c = models.Administrator.objects.filter(username=user, password=pwd).count()
+        # 若存在用户信息,返回信息并跳转至index_3页面
+        if c:
+            req.session['is_login'] = True
+            req.session['username'] = user
+            rep = redirect('/index_3.html')
+        # 若不存在账户信息
+        else:
+            message = "用户名或密码错误"
+            return render(req, 'login_3.html', {{'msg' : ''}})
+
+
+
 
 
 
