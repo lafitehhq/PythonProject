@@ -39,11 +39,11 @@ urlpatterns = [
     # url(r'^student.html$', views.handle_student),
 
     url(r'^login_3.html$', views.Login.as_view()),
-    url(r'^index_3.html$', views.index_3),
-    url(r'^logout_3.html$', views.logout_3),
-    url(r'^classes.html$', views.handle_classes),
-    url(r'^teacher.html$', views.handle_teacher),
-    url(r'^student.html$', views.handle_student),
+    # url(r'^index_3.html$', views.index_3),
+    # url(r'^logout_3.html$', views.logout_3),
+    # url(r'^classes.html$', views.handle_classes),
+    # url(r'^teacher.html$', views.handle_teacher),
+    # url(r'^student.html$', views.handle_student),
 
 
 ]

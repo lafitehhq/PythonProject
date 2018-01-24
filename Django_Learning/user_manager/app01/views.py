@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect,HttpResponse
 
 # Create your views here.
 
@@ -192,14 +192,96 @@ from app01 import models
 
 
 # #############################################登录版本4.0:CBV方式#############################################
+# from django import views
+# from django.utils.decorators import method_decorator
+#
+# def outer(func):
+#     def inner(req, *args, **kwargs):
+#         print(req.method)
+#         return func(req, *args, **kwargs)
+#     return inner
+#
+# class Login(views.View):
+#
+#     # GET方法，获取的是空字符串
+#     @method_decorator(outer)
+#     def get(self, req, *args, **kwargs):
+#         return render(req, 'login_3.html', {{'msg': ''}})
+#
+#     # POST方法
+#     @method_decorator(outer)
+#     def post(self, req, *args, **kwargs):
+#         # 获取的是提交的信息
+#         user = req.POST.get('user')
+#         pwd = req.POST.get('pwd')
+#         # 到数据库检测时候有账户
+#         c = models.Administrator.objects.filter(username=user, password=pwd).count()
+#         # 若存在用户信息,返回信息并跳转至index_3页面
+#         if c:
+#             req.session['is_login'] = True
+#             req.session['username'] = user
+#             rep = redirect('/index_3.html')
+#         # 若不存在账户信息
+#         else:
+#             message = "用户名或密码错误"
+#             return render(req, 'login_3.html', {{'msg': ''}})
+
+# # #############################################登录版本5.0:CBV方式#############################################
+# from django import views
+#
+# class Login_3(views.View):
+#     def dispatch(self, req, *args, **kwargs):
+#         if req.method == 'GET':
+#             return HttpResponse('滚蛋')
+#         # 调用父类的dispatch方法
+#         ret  = super(Login, self).dispatch(req, *args, **kwargs)
+#         print(111)
+#         return ret
+#
+#     def get(self, req, *args, **kwargs):
+#         print('GET')
+#         return render(req, 'login_3.html', {{'msg : '''}})
+#
+#     def post(self, req, *args, **kwargs):
+#         # 获取的是提交的信息
+#         user = req.POST.get('user')
+#         pwd = req.POST.get('pwd')
+#         # 到数据库检测时候有账户
+#         c = models.Administrator.objects.filter(username=user, password=pwd).count()
+#         # 若存在用户信息,返回信息并跳转至index_3页面
+#         if c:
+#             req.session['is_login'] = True
+#             req.session['username'] = user
+#             rep = redirect('/index_3.html')
+#         # 若不存在账户信息
+#         else:
+#             message = "用户名或密码错误"
+#             return render(req, 'login_3.html', {{'msg': ''}})
+
+# ##############################################登录版本5.0:CBV方式#############################################
 from django import views
+from django.utils.decorators import method_decorator
 
-class Login(views.View):
-    # GET方法，获取的是空字符串
+def outer(func):
+    def inner(req, *args, **kwargs):
+        print(req.method)
+        return func(req, *args, **kwargs)
+    return inner
+
+@method_decorator(outer, name='dispatch')
+class Login_3(views.View):
+    def dispatch(self, req, *args, **kwargs):
+        if req.method == 'GET':
+            return HttpResponse('滚蛋')
+        # 调用父类的dispatch方法
+        ret  = super(Login, self).dispatch(req, *args, **kwargs)
+        print(111)
+        return ret
+
     def get(self, req, *args, **kwargs):
-        return render(req, 'login_3.html', {{'msg': ''}})
+        print('GET')
+        return render(req, 'login_3.html', {{'msg : '''}})
 
-    # POST方法
     def post(self, req, *args, **kwargs):
         # 获取的是提交的信息
         user = req.POST.get('user')
@@ -214,12 +296,7 @@ class Login(views.View):
         # 若不存在账户信息
         else:
             message = "用户名或密码错误"
-            return render(req, 'login_3.html', {{'msg' : ''}})
-
-
-
-
-
+            return render(req, 'login_3.html', {{'msg': ''}})
 
 
 
