@@ -1,0 +1,197 @@
+client data
+
+data = {
+    sn:xxxx,
+    disk: [disk1,d2],
+    ram:[...]
+}
+
+
+客户端开发
+    linux
+
+    windows
+
+    1. 汇报新资产
+       SN 是 唯一标识 # 资产ID
+       if sn 不存在：
+            #自动创建新资产？？？NO
+            放入待审批区
+
+       else:
+           取出旧数据，跟客户端数据进行对比
+
+
+
+
+restful api
+
+api 接口认证
+
+linux 客户端
+
+
+
+服务器端解析客户端数据并入库
+
+
+
+{
+    'model': u'B85M-DS3H-A',
+    'cpu_count': 1,
+    'os_release': '764bit6.1.7601',
+    'nic': [
+        {
+            'macaddress': u'40: 8D: 5C: 93: F1: DE',
+            'model': u'[
+                00000007
+            ]RealtekPCIeGBEFamilyController',
+            'ipaddress': u'192.168.14.3',
+            'name': 7,
+            'netmask': (u'255.255.255.0',
+            u'64')
+        },
+        {
+            'macaddress': u'00: 50: 56: C0: 00: 01',
+            'model': u'[
+                00000014
+            ]VMwareVirtualEthernetAdapterforVMnet1',
+            'ipaddress': u'192.168.32.1',
+            'name': 14,
+            'netmask': (u'255.255.255.0',
+            u'64')
+        },
+        {
+            'macaddress': u'00: 50: 56: C0: 00: 08',
+            'model': u'[
+                00000015
+            ]VMwareVirtualEthernetAdapterforVMnet8',
+            'ipaddress': u'192.168.164.1',
+            'name': 15,
+            'netmask': (u'255.255.255.0',
+            u'64')
+        }
+    ],
+    'ram': [
+        {
+            'slot': u'ChannelA-DIMM0',
+            'model': u'PhysicalMemory',
+            'capacity': 8192L,
+            'sn': u'911223E6',
+            'manufactory': u'Kingston'
+        },
+        {
+            'slot': u'ChannelB-DIMM0',
+            'model': u'PhysicalMemory',
+            'capacity': 8192L,
+            'sn': u'25389EBE',
+            'manufactory': u'Kingston'
+        }
+    ],
+    'cpu_model': u'Intel(R)Core(TM)i5-4440CPU@3.10GHz',
+    'manufactory': u'GigabyteTechnologyCo.,
+    Ltd.',
+    'physical_disk_driver': [
+        {
+            'slot': 1,
+            'capacity': 111L,
+            'manufactory': u'(\u6807\u51c6\u78c1\u76d8\u9a71\u52a8\u5668)',
+            'sn': u'S33LNWBH693267K',
+            'model': u'SamsungSSD750EVO120GSCSIDiskDevice',
+            'iface_type': 'SCSI'
+        },
+        {
+            'slot': 0,
+            'capacity': 931L,
+            'manufactory': u'(\u6807\u51c6\u78c1\u76d8\u9a71\u52a8\u5668)',
+            'sn': u'Z9A3S7J6',
+            'model': u'ST1000DM003-1SB102SCSIDiskDevice',
+            'iface_type': 'SCSI'
+        }
+    ],
+    'wake_up_type': 6,
+    'sn': u'00426-OEM-8992662-00006',
+    'cpu_core_count': 4,
+    'os_type': 'Windows',
+    'os_distribution': 'Microsoft',
+    'asset_type': 'server'
+}{
+    'model': u'B85M-DS3H-A',
+    'cpu_count': 1,
+    'os_release': '764bit6.1.7601',
+    'nic': [
+        {
+            'macaddress': u'40: 8D: 5C: 93: F1: DE',
+            'model': u'[
+                00000007
+            ]RealtekPCIeGBEFamilyController',
+            'ipaddress': u'192.168.14.3',
+            'name': 7,
+            'netmask': (u'255.255.255.0',
+            u'64')
+        },
+        {
+            'macaddress': u'00: 50: 56: C0: 00: 01',
+            'model': u'[
+                00000014
+            ]VMwareVirtualEthernetAdapterforVMnet1',
+            'ipaddress': u'192.168.32.1',
+            'name': 14,
+            'netmask': (u'255.255.255.0',
+            u'64')
+        },
+        {
+            'macaddress': u'00: 50: 56: C0: 00: 08',
+            'model': u'[
+                00000015
+            ]VMwareVirtualEthernetAdapterforVMnet8',
+            'ipaddress': u'192.168.164.1',
+            'name': 15,
+            'netmask': (u'255.255.255.0',
+            u'64')
+        }
+    ],
+    'ram': [
+        {
+            'slot': u'ChannelA-DIMM0',
+            'model': u'PhysicalMemory',
+            'capacity': 8192L,
+            'sn': u'911223E6',
+            'manufactory': u'Kingston'
+        },
+        {
+            'slot': u'ChannelB-DIMM0',
+            'model': u'PhysicalMemory',
+            'capacity': 8192L,
+            'sn': u'25389EBE',
+            'manufactory': u'Kingston'
+        }
+    ],
+    'cpu_model': u'Intel(R)Core(TM)i5-4440CPU@3.10GHz',
+    'manufactory': u'GigabyteTechnologyCo.,
+    Ltd.',
+    'physical_disk_driver': [
+        {
+            'slot': 1,
+            'capacity': 111L,
+            'manufactory': u'(\u6807\u51c6\u78c1\u76d8\u9a71\u52a8\u5668)',
+            'sn': u'S33LNWBH693267K',
+            'model': u'SamsungSSD750EVO120GSCSIDiskDevice',
+            'iface_type': 'SCSI'
+        },
+        {
+            'slot': 0,
+            'capacity': 931L,
+            'manufactory': u'(\u6807\u51c6\u78c1\u76d8\u9a71\u52a8\u5668)',
+            'sn': u'Z9A3S7J6',
+            'model': u'ST1000DM003-1SB102SCSIDiskDevice',
+            'iface_type': 'SCSI'
+        }
+    ],
+    'wake_up_type': 6,
+    'sn': u'00426-OEM-8992662-00006',
+    'cpu_core_count': 4,
+    'os_type': 'Windows',
+    'os_distribution': 'Microsoft',
+    'asset_type': 'server'
+}
