@@ -1,0 +1,137 @@
+{% extends 'master/layout.html' %}
+{% load custom_tag %}
+
+{% block title %}在线视频{% endblock %}
+
+{% block css %}
+
+    <style>
+    .result-title{
+        margin-top: 20px;
+        padding: 10px;
+        background: #f0f0f0;
+        border: 1px solid #ebebeb;
+        border-width: 1px 1px 0 1px;
+    }
+    .horiz-img-region{
+        padding:10px 0px;
+        overflow: hidden;
+    }
+    .horiz-img-region .horiz-img-item{
+        width: 235px;float: left;
+        padding: 0 10px;
+        margin: 0px 5px 20px 5px;
+        text-decoration: none;
+        background-color: white;
+
+    }
+    .horiz-img-region .horiz-img-item:hover{
+        -moz-box-shadow: 1px 1px 5px #888888; /* 老的 Firefox */
+        box-shadow: 1px 1px 5px #888888;
+
+    }
+    .horiz-img-region .horiz-img-item img{
+        height: 145px; width: 100%; display: block;
+    }
+    .horiz-img-region .horiz-img-item h3{
+        font-size: 16px;
+        margin: 5px;
+    }
+    .horiz-img-region .horiz-img-item .caption{
+        padding: 9px 0px;
+
+    }
+    .horiz-img-region .horiz-img-item p{
+        margin: 5px 0;
+        font-size: 12px;
+        color: #b4bbbf;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+
+    }
+    .thumbnail{
+        background-color: transparent !important;
+        border: 0px !important;
+        margin-bottom: 5px !important;
+    }
+    </style>
+
+{% endblock %}
+
+
+{% block content %}
+    <div class="bg-gray ptb20">
+        <div class="wrap">
+
+           <div class="search">
+                <div class="filter" auto-id="search_filter">
+                    <dl class="clearfix" style="border: 0px;">
+                        <dt>方向：</dt>
+                        <dd class="" id="purpose_status">
+                            {% generate_url 0 current_url 1 '全部' %}
+                            {% for item in model.direction %}
+                                {% generate_url item.id current_url 1 item.name %}
+                            {% endfor %}
+
+                        </dd>
+                    </dl>
+
+                    <dl class="clearfix">
+                        <dt>分类：</dt>
+                        <dd id="material_status">
+                            {% generate_classification_url 0 current_url 2 '全部' model.direction%}
+                            {% for item in model.classification %}
+                                {% generate_classification_url item.id current_url 2 item.name model.direction%}
+                            {% endfor %}
+                        </dd>
+
+                    </dl>
+                    <dl class="clearfix">
+                        <dt>难度：</dt>
+                        <dd class="" id="surface_status">
+                            {% generate_url 0 current_url 3 '全部' %}
+                            {% for item in model.level %}
+                                {% generate_url item.id current_url 3 item.name %}
+                            {% endfor %}
+                        </dd>
+                    </dl>
+
+                </div>
+            </div>
+
+
+            <div class="clearfix pb20">
+                <div class="search-result">
+                    <div class="result-title">
+                        <span class="count">共为您找到 <strong style="color: #f90;"> {{ model.total_item }}</strong> 个视频</span>
+                    </div>
+                    <div class="col-md-12 horiz-img-region clearfix">
+                        {% for item in model.result %}
+                        <a class="horiz-img-item" target="_blank" href="{{ item.href }}">
+                            <div class="thumbnail">
+                              <img src="{{ item.img }}">
+                              <div class="caption">
+                                  <h3>{{ item.title }}</h3>
+                                  <p>{{ item.summary }}/月</p>
+                              </div>
+                            </div>
+                        </a>
+                        {% endfor %}
+                    </div>
+                    <nav style="text-align:center">
+                      <ul class="pagination pagination-sm" style="padding: 0px;margin: 0px;">
+                          {{ model.pager }}
+                     </ul>
+                   </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block js %}
+
+
+{% endblock %}

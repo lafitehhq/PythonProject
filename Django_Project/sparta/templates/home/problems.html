@@ -1,0 +1,230 @@
+{% extends 'master/layout.html' %}
+
+{% block title %}关于我们{% endblock %}
+
+{% block css %}
+    <head>
+        <link rel="stylesheet" href="{{ STATIC_URL }}plugins/bootstrap/css/bootstrap.css" />
+        <link rel="stylesheet" href="{{ STATIC_URL }}css/commons.css" />
+        <link rel="stylesheet" href="{{ STATIC_URL }}css/plugin.css" />
+        <link href="{{ STATIC_URL }}plugins/bxSlider/jquery.bxslider.css" rel="stylesheet" />
+        <link href="{{ STATIC_URL }}plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+        <link href="{{ STATIC_URL }}plugins/bootstrap-datetimepicker-master/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+        <link href="{{ STATIC_URL }}css/unify/shortcode_timeline1.css" rel="stylesheet" />
+        <link href="{{ STATIC_URL }}css/unify/app.css" rel="stylesheet" />
+        <link href="{{ STATIC_URL }}css/problems.css" rel="stylesheet"  />
+    </head>
+{% endblock %}
+
+{% block content %}
+<div class="problem-container">
+   <div class="introduce" >
+        <div class="introduce-title-wrap">
+          <h4 class="introduce-title width-97">
+              常见问题
+              <div class="radius-left"></div>
+              <div class="radius-right"></div>
+          </h4>
+        </div>
+    </div>
+    <div class="problem-main">
+    	<div class="problem-left">
+    		<h4>课程相关问题</h4>
+    		<dl>
+    			<dt>
+    				<div class="qz-question">Q<sub>1</sub></div>
+                    <span>我没有基础可以参加学习么?</span>
+    			</dt>
+    			<dd >
+    				必须可以，老男孩的课程分为初级、中级、高级，适用小白或已经工作多年的同学。
+    				<div class="answer-jt"></div>
+    			</dd>
+    		</dl>
+
+            <dl>
+    			<dt>
+    				 <div class="qz-question">Q<sub>2</sub></div>
+                     <span>你们都有什么上课方式？</span>
+    			</dt>
+    			<dd>
+    				我们的上课方式有两种，面授班和网络班。
+    				<div class="answer-jt"></div>
+    			</dd>
+    		</dl>
+            <dl>
+    			<dt>
+    				 <div class="qz-question">Q<sub>3</sub></div>
+                     <span>面授班上课时间是什么？</span>
+    			</dt>
+    			<dd>
+    				我们面授班是：周六或者周日一天课程。每个阶段课程大概时间4-5个月。
+上课时间：9点半-6点，但要8点半左右到校有课前考试。
+    				<div class="answer-jt"></div>
+    			</dd>
+    		</dl>
+
+            <dl>
+    			<dt>
+    				 <div class="qz-question">Q<sub>4</sub></div>
+                     <span>网络班只是下载视频么？还有什么服务？</span>
+    			</dt>
+    			<dd>
+    				我们网络班不光是下载视频，还提供8项服务
+1）购买整套视频，从报名之日起(享受1年内定期更新服务)
+2）单科，团购，专题课程视频仅限本次下载，不享受额外更新政策。
+3）学习过程问题解答支持、学生就业后工作中技术支持、答疑（1年内）。
+3）提供就业指导，推荐工作、高薪就业（1年内）。
+4）定期检查学员提交作业情况，督促学生完成学习（1年内）。
+5）加入和导师学习共同交流共同成长平台（数百人VIP学生共同前行交流）。
+6) 对学生性格测试分析建议、职业发展规划指导（1年内）。
+7）享受网络或者面授技术沙龙内部交流活动学习权利（1年内）。
+8）享受购买的对应网络课程的面授优惠（减去网络课程费用）
+以上服务老男孩及授课老师,亲自支持。
+    				<div class="answer-jt"></div>
+    			</dd>
+    		</dl>
+
+            <dl>
+    			<dt>
+    				 <div class="qz-question">Q<sub>5</sub></div>
+                     <span>网络班遇到问题如何解决？</span>
+    			</dt>
+    			<dd>
+    				我们为网络班学生提供了很多平台进行沟通。
+　　1)QQ群，在报名后直接加入学习。
+　　2)bbs论坛，专门为vip学生针对学习的内容进行的讨论。
+　　3)歪歪语音每周四晚上的在线答疑。
+　　4)周二，周四下午老师固定的答疑时间。
+　　5)svn递交作业的地址，可以给老师留言。
+　　6)如果问题特别紧急还可以拨打电话。只要努力学习，老师会作为你坚实的后盾。
+    				<div class="answer-jt"></div>
+    			</dd>
+    		</dl>
+
+            <dl>
+    			<dt>
+    				 <div class="qz-question">Q<sub>6</sub></div>
+                     <span>选择网络班可以循环听课么？</span>
+    			</dt>
+    			<dd>
+    				我们的网络班课程是下载视频后学习，是可以重复观看。而且可以享受2年内的视频更新。2年内更新的内容都是可以下载的。
+同时在沟通交流上，也是可以跟着后期开的班重复学习，这都没问题的。我们是包会的课程，所以会尽量保证你的学习时间。
+    				<div class="answer-jt"></div>
+    			</dd>
+    		</dl>
+    	</div>
+    	<div class="problem-right">
+    		<h4>报名及费用问题</h4>
+    		<dl>
+    			<dt>
+    				<div class="qz-question">Q<sub>1</sub></div>
+                    <span>请问如何报名？</span>
+    			</dt>
+    			<dd>
+    				 详情咨询客服
+    				<div class="answer-jt"></div>
+    			</dd>
+    		</dl>
+    		<h4>学员关心问题</h4>
+            <dl>
+    			<dt>
+    				 <div class="qz-question">Q<sub>1</sub></div>
+                     <span>老男孩培训机构的优势？</span>
+    			</dt>
+    			<dd>
+    				老男孩老师教学与培训核心思想：重目标、重思路、重方法、重实践、重习惯、重总结
+最大优势是和别的机构比：我们的宗旨就是切实提升学生真正的水平，让大家成为行业精英。
+1）师资超一流（目前是曾经月薪3W以上的讲师给大家讲课，10几年的工作和10几年的教育经验）
+2）内容超一流（内容讲的更深入浅出，深度高于企业生产标准但完全是企业用得到的）
+3）培训模式模式超一流，重视例如批改学生作业，把每一个学生当做“孩子”来培养，让每个学生去说，去做，去讲课。
+4）以学生为本讲课，培训的东西 不仅仅是技术本身，是对学生综合能力的培养。
+当然，我们也有不足，例如，品牌还不够大等。说的再多可能大家也不会信，欢迎大家前来考察、验证。不要错过了最佳的学习机会。
+老男孩培训家机构属于朝气蓬勃的青年时代，一切以学生为根本去培训，和那些老掉牙的只看重利益，利润的机构不能一起比的。
+大家可以仔细想想 其实很多机构在创业初期 初衷都是非常好的，比如曾经的青鸟，据说也不是很不错的！
+老男孩培训还属于一个创业初期阶段！所以，将来的发展是靠同学们的，所以，把你们培养好使我们必须要做到的。
+也因此，我们招生是有门槛的，不是想学就可以学的。
+    				<div class="answer-jt"></div>
+    			</dd>
+    		</dl>
+    		<dl>
+    			<dt>
+    				 <div class="qz-question">Q<sub>2</sub></div>
+                     <span>我要是学不会怎么办？</span>
+    			</dt>
+    			<dd>
+                    我们是私塾式教育，本身就是保证学会。我们在课程设置上就是“上课听，总结，回去做作业，考试”。
+                    这样老师监控了整个的过程。以确保你学会。我们所有授课内容全部实际操作，直接应用在工作中。只要你平时努力学习，跟着老师的进度，
+                    肯定没有问题。但是如果你真的不会，或者说是觉得哪些知识比较薄弱，一个是我们有专门课下录制的视频，还有就是你可以重复跟下期再学。直到学会为止。
+                    <div class="answer-jt"></div>
+    			</dd>
+    		</dl>
+            <dl>
+    			<dt>
+    				 <div class="qz-question">Q<sub>3</sub></div>
+                     <span>请问你们的学员毕业后主要就职于哪些企业？</span>
+    			</dt>
+    			<dd>
+    				 您好，根据学生目前就职的企业统计，目前就职行业最多的属互联网（互联网搜索、互联网门户、社区交友网站SNS、软件下载、网络视频、网上商城等 ）和网络游戏行业（WEB（网站）游戏、网络游戏、手机游戏 ），其次还有系统集成行业、移动增值行业（移动增值服务运营商（短信增值、手机WAP网站、手机邮箱pushmail、手机支付、手机搜索等等）、软件开发行业、IT外包行业、和极少数的非IT行业（他们也有linux技术人才的需求）。
+    				<div class="answer-jt"></div>
+    			</dd>
+    		</dl>
+            <dl>
+    			<dt>
+    				 <div class="qz-question">Q<sub>4</sub></div>
+                     <span>目前的学员约有多少？</span>
+    			</dt>
+    			<dd>
+    				我们从开始办学到现在总共学员大概将近2000人了。
+    				<div class="answer-jt"></div>
+    			</dd>
+    		</dl>
+            <dl>
+    			<dt>
+    				 <div class="qz-question">Q<sub>5</sub></div>
+                     <span>培养了那么多IT人才，会不会过剩？</span>
+    			</dt>
+    			<dd>
+    				首先，IT产业是国家重点扶持的行业，属于朝阳产业。据国家五部委的调查IT人才每年缺口达100万，这种现状可能延续10年甚至更长，我们可以进入招聘网站了解到IT人才是多么的抢手。在北京IT产业非常发达，而网络作为IT产业的核心，更加受到重视。市政府每年都投入巨资，加大信息化的建设，据调查，IT人才缺口每年达到12万以上。所以，我们目前的几千名学员远远不能满足社会的需要，不可能出现过剩的现象。
+    				<div class="answer-jt"></div>
+    			</dd>
+    		</dl>
+            <dl>
+    			<dt>
+    				 <div class="qz-question">Q<sub>6</sub></div>
+                     <span>学校是否提供电脑？</span>
+    			</dt>
+    			<dd>
+    				学校不提供电脑，学生自己携带笔记本电脑。要是机房的话，你的资料携带不方便，因为课后作业有很大部分的总结内容。我们学生基本上都用自己带的笔记本，针对情况特殊，没有电脑的学生，学校可以借给笔记本上课使用。
+    				<div class="answer-jt"></div>
+    			</dd>
+    		</dl>
+            <dl>
+    			<dt>
+    				 <div class="qz-question">Q<sub>7</sub></div>
+                     <span>学历低，年龄又较大，学完后能找到工作吗？</span>
+    			</dt>
+    			<dd>
+    				我们从最近一段时间就业情况来看，30岁的高中学员都能找到5000元左右的工作，实际上，IT行业没有绝对的高手，只要你愿意学，很快就会超越他们，我们的经验还告诉我们，往往学历低、年龄大的人更刻苦，学得更好。在国外，IT是一个终生职业，四、五十岁的工程师很多啊！很多网络的应用都是用于某个行业的应用，年龄大往往成为一种优势，毕竟你前的工作经历是宝贵的呀！
+    				<div class="answer-jt"></div>
+    			</dd>
+    		</dl>
+
+
+    	</div>
+    </div>
+  </div>
+{% endblock %}
+{% block js %}
+    <script>
+    $(function(){
+        $('dt').click(function () {
+            if ($(this).next().is(':visible')){
+                $(this).next().hide()
+            }else{
+                $(this).next().show()
+            }
+        })
+
+    })
+    </script>
+{% endblock %}

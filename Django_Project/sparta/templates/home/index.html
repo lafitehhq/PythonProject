@@ -1,0 +1,513 @@
+{% extends 'master/layout.html' %}
+
+
+{% block title %}首页{% endblock %}
+
+{% block css %}
+    <link href="{{ STATIC_URL }}plugins/bxSlider/jquery.bxslider.css" rel="stylesheet" />
+    <link href="{{ STATIC_URL }}plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="{{ STATIC_URL }}css/unify/plugins.css" rel="stylesheet" />
+    <link href="{{ STATIC_URL }}plugins/owl-carousel/owl-carousel/owl.carousel.css" rel="stylesheet" />
+
+    <style>
+        .sv-error-msg {
+            bottom: -15px;
+            position: absolute;
+            font-size: 8px;
+            color: #a94442;
+            background: #f2dede;
+            border: 1px solid #ebccd1;
+            height: 15px;
+            line-height: 15px;
+            padding: 0 20px;
+        }
+
+
+    .horiz-img-region{
+        padding:10px 0px;margin-top:20px;
+    }
+    .horiz-img-region .horiz-img-item{
+        width: 176px;float: left;margin: 0 10px;
+    }
+    .horiz-img-region .horiz-img-item img{
+        height: 160px; width: 100%; display: block;
+    }
+    .thumbnail .caption{
+        height: 51px;
+        text-align: center;
+        overflow: hidden;
+    }
+    .thumbnail .caption p{
+        margin: 0px;
+    }
+
+    .recruit_region{}
+    .recruit_list{
+        color: #555;
+        margin: 5px 0px;
+        display: block;
+        cursor: pointer;
+
+    }
+    .recruit_list .title{
+        padding-left: 0px;
+        display:block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+    }
+    .recruit_list .salary{
+        text-align: right;
+    }
+
+    .owl-clients-v1 img {
+        width: 120px;
+        height: auto;
+    }
+
+
+
+    </style>
+{% endblock %}
+
+{% block content %}
+
+    <div>
+        <form>
+            {% csrf_token  %}
+        </form>
+    </div>
+
+    <div>
+        <div>
+            <ul id="bxslider" class="bxslider">
+                {% for item in slider_list %}
+                 <li>
+                     <a href="{{ item.href }}">
+                         <img style="height: 300px; width: 100%" src="/{{ item.img }}" />
+                     </a>
+                 </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <!--
+        <div class="wrap">
+            <div class="category clearfix">
+
+                        <a href="/search-1-0-0-0-0-0.html">
+                            <i class="icon fa fa-cogs"></i>
+                            <b>课程介绍</b>
+                        </a>
+
+                        <a href="/search-2-0-0-0-0-0.html">
+                            <i class="icon fa fa-road"></i>
+                            <b>就业专区</b>
+                        </a>
+
+                        <a href="/tearch.html">
+                            <i class="icon fa fa-wrench"></i>
+                            <b>师资团队</b>
+                        </a>
+
+                        <a href="/search-4-0-0-0-0-0.html">
+                            <i class="icon fa fa-flash"></i>
+                            <b>在线视频</b>
+                        </a>
+
+                        <a href="/search-5-0-0-0-0-0.html">
+                            <i class="icon fa fa-subway"></i>
+                            <b>技术论坛</b>
+                        </a>
+
+
+                <a href="/about.html">
+                    <i class="icon fa fa-th-list"></i>
+                    <b>关于我们</b>
+                </a>
+
+            </div>
+
+
+        </div>
+        -->
+    </div>
+
+
+    <div class="bg-gray ptb20">
+        <div class="wrap" >
+            <div class="floor">
+
+                <div class="floor-title">
+                    <span>最新公告</span>
+                </div>
+
+                <div class="floor-content clearfix" style="background-color: #F2FFEA;">
+
+                    <div class="row">
+                        {% for item in notice_list %}
+                        <div class="col-sm-4 info-blocks">
+
+                            <i class="icon-info-blocks fa fa-bell-o" style="margin-top: 20px;"></i>
+
+                            <div class="info-blocks-in">
+                                <h3>{{ item.title }}</h3>
+                                <p style="color: #999;">
+                                    {{ item.content | safe }}
+                                    </br>
+                                    <a href="/notice-{{ item.id }}.html" target="_blank">查看更多</a>
+                                </p>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="wrap">
+
+            <div class="floor">
+                <div class="floor-title">
+                    <span>课程介绍</span>
+                </div>
+                <div class="floor-content clearfix">
+
+                    {% for item in course_list %}
+                        <a class="panel-item" href="/course-detail-{{ item.id }}.html">
+                            <div class="service-block service-block-default">
+                                <img style="width:50px;height: 50px;" src="{{ item.icon }}" alt="" class="img-circle">
+                                <h2 class="heading-md">{{ item.name }}</h2>
+                                <p>{{ item.summary }}</p>
+                            </div>
+                        </a>
+                    {% endfor %}
+
+                </div>
+            </div>
+
+
+            <div class="floor">
+                <div class="floor-title">
+                    <span>学员就业</span>
+                    <a href="/search-0-0-0-0-0-0.html" target="_blank" class="more">More »</a>
+                </div>
+                <div class="floor-content clearfix">
+                    <div class="col-md-8">
+                        <div class="funny-boxes funny-boxes-top-yellow bg-color-white">
+                            <div class="row">
+                                <div class="col-md-4 funny-boxes-img">
+                                    <img class="img-responsive" style="height: 186px;width: 160px;" src="{{ student_detail.student__pic }}" alt="">
+                                    <ul class="list-unstyled">
+                                       <li><i class="fa-fw fa fa-briefcase"></i> {{ student_detail.student__salary }}</li>
+                                       <li><i class="fa-fw fa fa-map-marker"></i> {{ student_detail.student__company }}</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="#">{{ student_detail.student__name }}</a></h2>
+                                    <ul class="list-unstyled funny-boxes-rating">
+                                       <li><i class="fa fa-star"></i></li>
+                                       <li><i class="fa fa-star"></i></li>
+                                       <li><i class="fa fa-star"></i></li>
+                                       <li><i class="fa fa-star"></i></li>
+                                       <li><i class="fa fa-star-o"></i></li>
+                                    </ul>
+                                    <p>{{ student_detail.letter_of_thanks }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 recruit_region">
+                        <div class="headline" style="margin:0px;border-bottom:2px solid #72c02c"></div>
+                        <h2 style="margin: 10px 0px;">招聘信息</h2>
+
+                        {% for item in recruit_list %}
+                            <a class="recruit_list clearfix">
+                                <div class="col-md-8 title">{{ item.title }}</div>
+                                <div class="col-md-4 salary">{{ item.salary }}</div>
+                            </a>
+                        {% endfor %}
+
+                    </div>
+
+                    <div class="col-md-12 horiz-img-region clearfix">
+                        {% for item in student_list %}
+                        <div class="horiz-img-item">
+                            <div class="thumbnail">
+                              <img  src="{{ item.pic }}" >
+                              <div class="caption">
+                                  <p>{{ item.company }}</p>
+                                  <p>{{ item.salary }}</p>
+                              </div>
+                            </div>
+
+                        </div>
+                        {% endfor %}
+
+                    </div>
+                </div>
+            </div>
+            <!--
+            <div class="floor">
+                <div class="floor-title">
+                    <span>技术论坛</span>
+
+                </div>
+                <div class="floor-content clearfix">
+
+                    <div class="carousel">
+                        <div class='tab-menu-box-3'>
+                            <div class='menu'>
+                                <div class="tip current">
+                                    今日焦点
+                                </div>
+                                <div class="more">
+                                    <a href="#">号外号外老男孩远赴纳斯达克上市了</a>
+                                </div>
+                            </div>
+
+                            <div class='content'>
+                                <div style="margin:5px;">
+                                     <ul class="bxslider">
+
+                                         <li>
+                                             <a href="#">
+                                                 <img style="width: 470px;height: 215px;" src="/static/images/focus/3_hLYlHZk.jpg" />
+                                             </a>
+                                         </li>
+                                         <li>
+                                             <a href="#">
+                                                 <img style="width: 470px;height: 215px;" src="/static/images/focus/3_hLYlHZk.jpg" />
+                                             </a>
+                                         </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ask">
+                        <div class='tab-menu-box1'>
+                            <div class='menu'>
+                                <ul id='tab-menu-title'>
+                                    <li class='current' content-to='1'>Linux</li>
+                                    <li content-to='2'>Python</li>
+                                    <li content-to='3'>MySQL</li>
+                                    <li content-to='3'>C语言</li>
+                                </ul>
+
+                                <div class="more">
+                                    <a href="#">更多</a>
+                                </div>
+                                <div class="more">
+
+                                </div>
+
+
+                            </div>
+
+                            <div id='tab-menu-body' class='content'>
+
+                                <div content='1'>
+                                    <ul>
+
+                                        <li class="clearfix">
+                                            <b>北京</b>
+                                            <span>
+                                                <a href="#">嘿嘿额黑</a>
+                                            </span>
+                                            <i>2016-12-11</i>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <div content='2' class='hide'>
+                                    <ul>
+
+                                        <li class="clearfix">
+                                            <b>上海</b>
+                                            <span>
+                                                <a href="#">嘿嘿额黑</a>
+                                            </span>
+                                            <i>2016-12-11</i>
+                                        </li>
+
+
+                                    </ul>
+                                </div>
+                                <div content='3' class='hide'>
+                                    <ul>
+                                        <li class="clearfix">
+                                            <b>南京</b>
+                                            <span>
+                                                <a href="#">嘿嘿额黑</a>
+                                            </span>
+                                            <i>2016-12-11</i>
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            -->
+
+
+            <div class="floor">
+                <div class="floor-title">
+                    <span>校园生活</span>
+                </div>
+                <div class="floor-content clearfix">
+                    <div class="row team-v3">
+                        <div class="col-md-3 col-sm-6 md-margin-bottom-50">
+                            <div class="team-img">
+                                <img class="img-responsive" src="/static/images/team/img1-md.jpg" alt="" >
+                                <div class="team-hover">
+                                    <span>Daniel Wearne</span>
+                                    <small>Technical Director</small>
+                                    <p>Lorem ipsum dolor sit ame con sectetur adipisci ng e lit.</p>
+                                    <ul class="list-inline team-social-v3">
+                                        <li><a href="#"><i class="rounded-x fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="rounded-x fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="rounded-x fa fa-google-plus"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 md-margin-bottom-50">
+                            <div class="team-img">
+                                <img class="img-responsive" src="/static/images/team/img5-md.jpg" alt="">
+                                <div class="team-hover">
+                                    <span>Sara Lisbon</span>
+                                    <small>Designer</small>
+                                    <p>Lorem ipsum dolor sit ame con sectetur adipisci ng e lit.</p>
+                                    <ul class="list-inline team-social-v3">
+                                        <li><a href="#"><i class="rounded-x fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="rounded-x fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="rounded-x fa fa-google-plus"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 sm-margin-bottom-50">
+                            <div class="team-img">
+                                <img class="img-responsive" src="/static/images/team/img3-md.jpg" alt="">
+                                <div class="team-hover">
+                                    <span>John Doe</span>
+                                    <small>Developer</small>
+                                    <p>Lorem ipsum dolor sit ame con sectetur adipisci ng e lit.</p>
+                                    <ul class="list-inline team-social-v3">
+                                        <li><a href="#"><i class="rounded-x fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="rounded-x fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="rounded-x fa fa-google-plus"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="team-img">
+                                <img class="img-responsive" src="/static/images/team/img2-md.jpg" alt="">
+                                <div class="team-hover">
+                                    <span>Alice Williams</span>
+                                    <small>Support</small>
+                                    <p>Lorem ipsum dolor sit ame con sectetur adipisci ng e lit.</p>
+                                    <ul class="list-inline team-social-v3">
+                                        <li><a href="#"><i class="rounded-x fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="rounded-x fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="rounded-x fa fa-google-plus"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+            </div>
+            </div>
+
+            <div class="floor">
+                <div class="floor-title">
+                    <span>企业合作</span>
+                </div>
+                <div class="floor-content clearfix">
+                    <div class="owl-clients-v1">
+                        {% for item in cooperation_list %}
+                        <a class="item" href="{{ item.href }}">
+                            <img src="{{ item.logo }}" alt="{{ item.company }}">
+                        </a>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+{% endblock %}
+
+{% block js %}
+    <script src='{{ STATIC_URL }}plugins/bxSlider/jquery.bxslider.min.js'></script>
+    <script src="{{ STATIC_URL }}plugins/owl-carousel/owl-carousel/owl.carousel.js"></script>
+    <script src="{{ STATIC_URL }}js/plugins/owl-carousel.js"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+
+          $('.bxslider').bxSlider({
+              auto: true
+          });
+
+             OwlCarousel.initOwlCarousel();
+        });
+
+        function SubmitPublish(form, status){
+            var result = $.validate(form, status);
+            if(result) {
+                $.ajax({
+                    url: '/publish.html',
+                    type: 'POST',
+                    data: result,
+                    success: function (callback) {
+                        callback = $.parseJSON(callback);
+                        if(callback.status){
+
+                        }else{
+                            $.each(callback.error,function(key,value){
+
+                                var name = key;
+                                var msg = value[0].message;
+                                var $parent = $(form).find('[name="'+name+'"]').parent();
+                                $.ErrorMessage($parent, msg);
+                            });
+                        }
+                    }
+                });
+            }
+        }
+
+        function CancelPublish(){
+
+        }
+        $(function(){
+		    ChangeTab('#tab-menu-title', '#tab-menu-body');
+        });
+
+        function ChangeTab(title, body) {
+            $(title).children().bind("mouseover", function () {
+                $menu = $(this);
+                $content = $(body).find('div[content="' + $(this).attr("content-to") + '"]');
+                $menu.addClass('current').siblings().removeClass('current');
+                $content.removeClass('hide').siblings().addClass('hide');
+            });
+        }
+
+        function ChangeCode() {
+            var code = document.getElementById('imgCode');
+            code.src += '?';
+        }
+	</script>
+
+
+    </script>
+{% endblock %}

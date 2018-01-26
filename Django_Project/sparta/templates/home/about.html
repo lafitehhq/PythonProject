@@ -1,0 +1,223 @@
+
+{% extends 'master/layout.html' %}
+
+
+{% block title %}关于我们{% endblock %}
+
+{% block css %}
+    <head>
+
+    <link href="{{ STATIC_URL }}plugins/bxSlider/jquery.bxslider.css" rel="stylesheet" />
+    <link href="{{ STATIC_URL }}plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="{{ STATIC_URL }}plugins/bootstrap-datetimepicker-master/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}css/unify/shortcode_timeline1.css" rel="stylesheet" />
+    <link href="{{ STATIC_URL }}css/unify/app.css" rel="stylesheet" />
+    <link href="{{ STATIC_URL }}css/about.css" rel="stylesheet"  />
+
+    </head>
+{% endblock %}
+
+
+{% block content %}
+    <div class="bg-gray ptb20">
+        <div class="wrap">
+
+            <div class="headline-center margin-bottom-60">
+                <h2>关于老男孩教育</h2>
+                <p>专注IT运维领域11年 - 铸就中国精英Linux运维培训第一品牌<br>
+                致力于为有若干年工作经验的IT从业人员提供深度、高端的Linux运维相关技术实战培训，以助其在工作上能跳出低薪、低技术含量的泥潭。</p>
+            </div>
+
+            <div class='tab-menu-box-10 clearfix'>
+                <div class='menu'>
+                    <ul id='tab-menu-title' class="clearfix">
+                        <li class="current" content-to='1'>公司简介<i></i></li>
+                        <li content-to='2'>媒体报道<i></i></li>
+                        <li content-to='3'>人才招聘<i></i></li>
+                        <li content-to='4'>学习环境<i></i></li>
+                        <li content-to='5'>联系我们<i></i></li>
+                    </ul>
+                </div>
+                <div id='tab-menu-body' class='content'>
+                    <div content='1'>
+                        <div>
+                            <p class="col-md-7 indent-text">老男孩LINUX是由老男孩老师成立于2007年，致力于为有若干年工作经验的IT从业人员提供深度、高端的Linux运维相关技术实战培训，以助其在工作上能跳出低薪、低技术含量的泥潭。从成立到现在，在没有花过一分钱广告费，几乎全部靠口碑传播的基础上，从老男孩毕业的面授学员已达632名，网络班学员1000多名，就不全面的统计，目前已有30多位学员在国内外知名互联网公司上升到IT总监、运维主管的职位，另有上百位学员在阿里、腾讯、百度、小米、京东、360公司、亚马逊、新浪、SOHU、网易、民生银行、华夏银行等众多知名企业担任资深系统工程师、架构师等相关职位。</p>
+                            <div class="col-md-5 aboutus-img">
+                                <img src="https://www.yonglibao.com/static/images/aboutus/aboutus.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="headline"><h2>成长故事</h2></div>
+                            <div>
+                                <p class="indent-text">在混乱的IT培训行业里，各培训机构质量参差不齐，很多学校现在是根本不在乎课程质量，随便找个刚工作一两年普通工程师包装一下，就变成名师给人讲课，许多学生之前没做过相关IT实际工作，对课程内容好坏也没法直观判断，结果毕业后学到的东西只能从事最低级、基础的系统管理员的工作，平均三四千的月薪只能维持在北上广基本的生存。</p>
+                                <p class="indent-text">N多这样的培训机构带坏了整个行业的名声，导致大家现在对IT培训普遍抱有一个态度，就是烂、骗钱。对于这样的结果，我们也深感无奈，躺着也中枪，真是很无奈，我们唯一能做的就是以身作则，真心关注、帮助每一位学员，努力让他们能够真正学到企业实用的知识和技能，当他们毕业后，能够找到一份满意的工作是对我们最好的认可。</p>
+                                <p class="indent-text">到现在为止，我们的主要招生来源还是通过学生互相介绍，以及老男孩老师自己的博客来拉客☺，坚持不花钱做广告也导致我们的知名度没有某些同行机构大，但有的时候，少即是多、小即是大，机构小一点，能让我们倍加珍惜每个学生对我们的信任、能让我们有足够的精力关注到每位学员，如果培训机构做大就会变质的话，那我们宁愿一直做个小机构。</p>
+                                <p class="indent-text">老男孩培训目前依然位于昌平沙河，距离市中心稍远，有些学生抱怨学校较远，我们也曾提议往近的地方搬一搬，但老男孩老师坚持认为，学校远也是有好处的，一是可以帮学生省掉近三分之一的学费，二是可以刷掉一些不够刻苦的学生，所以呢，你懂的，老男孩培训现在依然在沙河。 </p>
+                                <p class="indent-text">即便我们相信我们能提供业内最高质量的课程，但我们依然不能保证每个学员都学有所成，学习是双方的事情，学校再努力的教，学生不主动、不努力、不上心，那也肯定学不会，即便送他去北大、清华也是如此。我们不想招这样的学生，招来我们也教不好，因此，我们的部分课程已经开始开展“劝退行动”，在每期课程开始的前几天，通过对每个学员学习态度、努力程度、学习能力、作业完成度等做综合考评，对于不符合要求的学员，实行劝退，退还学费，扫地出门。可以说，我们是业内第一家敢于做这样事情的机构，为什么呢？你懂的，劝退一个学生，就少挣一笔钱呀，到嘴里的肉再吐出来是何等难受。不过，我们做到了，现在每期都会劝退掉几个学员，所以，如果你来老男孩教育学习但却不努力的话，请做好被刷掉的准备。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div content='2' class='hide'>
+                        <div class="col-md-12" style="text-align: center;">
+                            <h4><strong>老男孩教育电视台专访视频</strong></h4>
+                            <p>2015年11月11日，老男孩教育受邀接受教育电视台专访</p>
+                        </div>
+                        <div class="col-md-12">
+                            <embed wmode="window" flashvars="vid=i0168ba20wb&amp;tpid=3&amp;showend=1&amp;showcfg=1&amp;searchbar=1&amp;shownext=1&amp;list=2&amp;autoplay=0&amp;ptag=b1_qzone_qq_com&amp;outhost=http%3A%2F%2Fv.qq.com%2Fpage%2Fi%2Fw%2Fb%2Fi0168ba20wb.html&amp;refer=http%3A%2F%2Fb1.qzone.qq.com%2Fcgi-bin%2Fblognew%2Fblog_output_data%3Fuin%3D49000448%26blogid%3D1444445179%26styledm%3Dcn.qzonestyle.gtimg.cn%26imgdm%3Dcn.qzs.qq.com%26bdm%3Db.qzone.qq.com%26mode%3D2%26numperpage%3D15%26timestamp%3D1444551572%26dprefix%3D%26blogseed%3D0.7556739561259747%26inCharset%3Dgb2312%26outCharset%3Dgb2312%26ref%3Dqzone%26entertime%3D1444551573978&amp;openbc=0&amp;title=%20%E8%80%81%E7%94%B7%E5%AD%A9%E6%95%99%E8%82%B2%E7%94%B5%E8%A7%86%E5%8F%B0%E4%B8%93%E8%AE%BF%E8%A7%86%E9%A2%91" src="http://imgcache.qq.com/tencentvideo_v1/player/TencentPlayer.swf?max_age=86400&amp;v=20140714" quality="high" name="tenvideo_flash_player_1444551608342" id="tenvideo_flash_player_1444551608342" bgcolor="#000000" width="100%" height="500px" align="middle" allowscriptaccess="always" allowfullscreen="true" type="application/x-shockwave-flash" pluginspage="http://get.adobe.com/cn/flashplayer/">
+                        </div>
+                    </div>
+                    <div content='3' class='hide'>
+                        <div class="join-order">
+                            <ul class="clearfix join-us">
+                                <li class="current">资深市场推广员</li>
+                                <li class="">资深Linux运维讲师</li>
+                            </ul>
+                            <div class="join-detail box-shadow">
+                                <div class="join-us-detail" style="display: block;">
+                                <h3>资深市场推广员</h3>
+                                <dl>
+                                    <dt>职位描述：</dt>
+                                    <dd>1、负责公司现有产品优化和日常运营；</dd>
+                                    <dd>2、新产品研发和前端新技术的应用，带来更好的用户体验。</dd>
+                                </dl>
+                                <dl>
+                                    <dt>职位说明：</dt>
+                                    <dd>1、精通html，css，对盒子模型有深刻理解；</dd>
+                                    <dd>2、熟知各主流浏览器（ie6+/Chrome/Firefox/Safari）兼容性问题及相应解决方案；</dd>
+                                    <dd>3、熟悉js原理及常用框架（jquery），能独立完成常用的js交互效果；</dd>
+                                    <dd>4、了解html5和css3，并有相关作品；</dd>
+                                    <dd>5、良好的审美能力、界面风格、色彩搭配及框架结构等有一定的把控能力；</dd>
+                                    <dd>6、熟悉github相关操作优先。</dd>
+                                </dl>
+                                <dl>
+                                    <dt>福利待遇：</dt>
+                                    <dd>1、长期激励：公司期权；</dd>
+                                    <dd>2、福利：享受法定节假日、公司婚假、产假，相关社保，公司旅游等。</dd>
+                                </dl>
+                                <dl>
+                                    <dt class="join-email"><b>请将简历发送至招聘邮箱</b> <a href="mailto:hyran@126.com">hyran@126.com</a> <b> 标题请注明"应聘+职位+姓名</b></dt>
+                                </dl>
+                                </div>
+                                <div class="join-us-detail" style="display: none;">
+                                <h3>资深Linux运维讲师</h3>
+                                <dl>
+                                    <dt>职位说明：</dt>
+                                    <dd>1、本科及以上学历，工作经验3年以上；</dd>
+                                    <dd>2、有扎实的美术功底和较强的设计能力，精通Photoshop、Flash、Dreamweaver、PPT等设计工具；</dd>
+                                    <dd>3、熟悉网站与系统建设流程，有较丰富的网站、系统设计和制作经验；</dd>
+                                    <dd>4、有极强的色彩感和色度渲染力，有创意、设计能力强；</dd>
+                                    <dd>5、能从用户角度出发，对用户体验和方便操控有自己的认识；</dd>
+                                    <dd>6、会使用HTML、等语言，会DIV+CSS页面布局为佳；</dd>
+                                    <dd>7、勤奋、敬业，责任心强，富有团队合作与开拓进取精神，擅于创新；</dd>
+                                    <dd>8、好的沟通、领悟能力，认真负责的态度，具有团队合作精神和敬业精神，能与团队其他成员进行有效沟通。</dd>
+                                </dl>
+                                <dl>
+                                    <dt class="join-email"><b>请将简历发送至招聘邮箱</b> <a href="mailto:hyran@126.com">hyran@126.com</a> <b> 标题请注明"应聘+职位+姓名</b></dt>
+                                </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div content='4' class='hide'>
+                        <div>
+                            <ul id="environment_us_menu" class="environment-us clearfix">
+                                <li class="current" content-to='1'>北京总部·云锦路</li>
+                                <li content-to='2'>山东网点·陆家嘴</li>
+                            </ul>
+                        </div>
+                        <div id="environment_us_body">
+                            <div content='1'>
+                                <img width="100%;" src="https://www.yonglibao.com/static/images/aboutus/environment/offices-01-new.jpg" alt="">
+                            </div>
+                            <div content='2' class="hide">
+                                <img width="100%;" src="https://www.yonglibao.com/static/images/aboutus/environment/offices-02.jpg" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div content='5' class='hide'>
+                        <div class="headline"><h2>北京总部</h2></div>
+                        <div class="clearfix">
+                            <div class="col-md-6" style="padding-top: 20px;height: 300px">
+                                <h4><strong>学校地址:</strong></h4>
+                                <p>北京市昌平区沙河青年创业大厦15层</p>
+                                <p>报名电话：010-60747396(工作时间)</p>
+                                <p>18911718229 18600338340(8：00-22：00)</p>
+                                <p>QQ: 70271111 80042789</p>
+                                <hr>
+                                <h4><strong>周边交通：</strong></h4>
+                                <p>地铁站：昌平线沙河站B口；公交线路：670路、专51路、昌52、昌66等</p>
+                            </div>
+                            <!--
+                            <div class="col-md-3">
+                              <div style="height: 300px;">
+                                <img width="100%" height="100%" src="http://img3.imgtn.bdimg.com/it/u=3238939317,2929601626&fm=15&gp=0.jpg" alt="北京总部">
+                              </div>
+                            </div>
+                            -->
+                            <div class="col-md-6">
+                                <div id="contact-map-1" class="contact-map">
+                                  <div><a target="_blank" href="http://apis.map.qq.com/uri/v1/marker?marker=coord:40.149730,116.29176;title:老男孩教育;addr:沙河青年创业大厦15层"><i class="fa fa-search-plus"></i> 查看完整地图</a></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block js %}
+    <script src='{{ STATIC_URL }}plugins/bxSlider/jquery.bxslider.min.js'></script>
+    <script src='{{ STATIC_URL }}plugins/bootstrap-datetimepicker-master/js/bootstrap-datetimepicker.min.js'></script>
+    <script src='{{ STATIC_URL }}plugins/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.zh-CN.js'></script>
+    <script src='{{ STATIC_URL }}js/valid.js'></script>
+    <script charset="utf-8" src="http://map.qq.com/api/js?v=2.exp"></script>
+    <script>
+    $(function(){
+	    ChangeTab('#tab-menu-title', '#tab-menu-body');
+        ChangeTab('#environment_us_menu', '#environment_us_body');
+        initMap(40.149730,116.291760,'contact-map-1');
+    });
+
+    function ChangeTab(title, body) {
+            $(title).children().bind("click", function () {
+                var $menu = $(this);
+                var $content = $(body).find('div[content="' + $(this).attr("content-to") + '"]');
+                $menu.addClass('current').siblings().removeClass('current');
+                $content.removeClass('hide').siblings().addClass('hide');
+            });
+        }
+
+    //联系我们开始
+    function initMap(argx,argy,mapid) {
+        var center = new qq.maps.LatLng(argx, argy);
+        var map = new qq.maps.Map(document.getElementById(mapid), {
+            // 地图的中心地理坐标。
+            //center: new qq.maps.LatLng(39.916527,116.397128)
+            center: center,
+            zoom: 11,
+            mapTypeId: qq.maps.MapTypeId.ROADMAP
+        });
+        var marker = new qq.maps.Marker({
+            position: center,
+            map: map
+        });
+    }
+    
+
+    //人才招聘开始
+    $(".join-us li").click(function(event) {
+       $(this).addClass('current').siblings().removeClass('current');
+       $(this).parents().siblings(".join-detail").children(".join-us-detail").eq($(this).index()).show().siblings().hide();
+    });
+
+    </script>
+
+{% endblock %}

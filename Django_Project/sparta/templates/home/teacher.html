@@ -1,0 +1,133 @@
+{% extends 'master/layout.html' %}
+
+
+{% block title %}师资团队{% endblock %}
+
+{% block css %}
+    <link href="{{ STATIC_URL }}plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="{{ STATIC_URL }}css/teacher.css" rel="stylesheet"  />
+
+{% endblock %}
+
+{% block content %}
+    <div class="bg-gray">
+        <div class="wrap">
+
+            <div class="headline-center margin-bottom-20">
+                <!--<h2>师资团队</h2>-->
+                <img class="title-picture testimonials-v6 testimonials-wrap" src="/static/images/bg/16.jpg">
+            </div>
+            <div class="testimonials-v6 testimonials-wrap">
+                <div class="row pb20">
+                    <div class="col-md-12">
+                        <div class="testimonials-info rounded-bottom">
+                            <img class="rounded-x" src="/static/images/teacher_pic/microMsg.1431480505997_new.jpg" alt="">
+                            <div class="testimonials-desc">
+                                <strong>武sir</strong>
+                                <p>中国第二牛逼的python讲师</p>
+                                <a target="_blank" href="http://weibo.com"><i class="fa fa-weibo"></i> 微博</a>
+                                <a target="_blank" href="http://www.baidu.com"><i class="fa fa-file-text-o"></i> 博客</a>
+                                <a target="_blank" href="http://www.tudou.com"><i class="fa fa-video-camera"></i> 视频</a>
+                                <hr class="hr-xs">
+                                <span>专注于IT运维领域10年以上，擅长大规模网站集群运维架构技术细节，长期兼职多家企业技术顾问。2007年开办国内首个Linux运维实战培训私塾式精英教育培训机构。截止到2012年，累计受益学生达到千余人。 2011年度IT博客大赛10强得主。 2012年度IT博客大赛星光评委。</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pb20">
+                    <div class="col-md-12">
+                        <div class="testimonials-info rounded-bottom">
+                            <img class="rounded-x" src="/static/images/teacher_pic/IMG_20150303_083858_1.jpg" alt="">
+                            <div class="testimonials-desc">
+                                <strong>AlexLi</strong>
+                                <p>中国第一牛逼的python讲师</p>
+                                <a target="_blank" href="http://weibo.com"><i class="fa fa-weibo"></i> 微博</a>
+                                <a target="_blank" href="http://www.baidu.com"><i class="fa fa-file-text-o"></i> 博客</a>
+                                <a target="_blank" href="http://www.tudou.com"><i class="fa fa-video-camera"></i> 视频</a>
+                                <hr class="hr-xs">
+                                <span>TriAquae开源运维软件创始人，混迹IT运维领域多年，曾就职于松下、国政通、飞信、中金、NOKIA等公司，维护过少至几十台，多至数万台设备的IT系统，致力于提高企业运维自动化水平，坚信一人管理一万台设备是可以达到的目标，坚信不会开发的运维工程师应该下岗。自称业余政治观察员，屌丝愤青，热爱旅游、美剧。现任职于某美资金融软件公司，兼任老男孩PYTHON开发讲师。</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row team-v3 pb20">
+
+                <div class="col-md-3 col-sm-6 md-margin-bottom-50">
+                    <div class="team-img">
+                        <img class="img-responsive" src="/static/images/team/img1-md.jpg" alt="" >
+                        <div class="team-hover">
+                            <span>Daniel Wearne</span>
+                            <small>Technical Director</small>
+                            <p>Lorem ipsum dolor sit ame con sectetur adipisci ng e lit.</p>
+                            <ul class="list-inline team-social-v3">
+                                <li><a href="#"><i class="rounded-x fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="rounded-x fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="rounded-x fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 md-margin-bottom-50">
+                    <div class="team-img">
+                        <img class="img-responsive" src="/static/images/team/img5-md.jpg" alt="">
+                        <div class="team-hover">
+                            <span>Sara Lisbon</span>
+                            <small>Designer</small>
+                            <p>Lorem ipsum dolor sit ame con sectetur adipisci ng e lit.</p>
+                            <ul class="list-inline team-social-v3">
+                                <li><a href="#"><i class="rounded-x fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="rounded-x fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="rounded-x fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 sm-margin-bottom-50">
+                    <div class="team-img">
+                        <img class="img-responsive" src="/static/images/team/img3-md.jpg" alt="">
+                        <div class="team-hover">
+                            <span>John Doe</span>
+                            <small>Developer</small>
+                            <p>Lorem ipsum dolor sit ame con sectetur adipisci ng e lit.</p>
+                            <ul class="list-inline team-social-v3">
+                                <li><a href="#"><i class="rounded-x fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="rounded-x fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="rounded-x fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="team-img">
+                        <img class="img-responsive" src="/static/images/team/img2-md.jpg" alt="">
+                        <div class="team-hover">
+                            <span>Alice Williams</span>
+                            <small>Support</small>
+                            <p>Lorem ipsum dolor sit ame con sectetur adipisci ng e lit.</p>
+                            <ul class="list-inline team-social-v3">
+                                <li><a href="#"><i class="rounded-x fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="rounded-x fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="rounded-x fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+        </div>
+
+    </div>
+
+{% endblock %}
+
+{% block js %}
+
+{% endblock %}

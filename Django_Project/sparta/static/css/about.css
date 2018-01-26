@@ -1,0 +1,119 @@
+
+.environment-us li {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #3598db;
+    color: #3598db;
+    border-radius: 5px !important;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.environment-us li:hover,.environment-us li.current {
+    background: #f37b20;
+    color: #fff;
+    border: 1px solid #f48430;
+}
+
+/* join-us-start */
+ .join-us li{
+   float: left;
+   margin-right: 20px;
+   margin-bottom: 20px;
+   border: 1px solid #3598db;
+   color: #3598db;
+   border-radius: 5px !important;
+   padding: 5px 10px;
+   cursor: pointer;
+ }
+ .join-us .current,.join-us li:hover{
+   background: #f37b20;
+   color:#fff;
+   border:1px solid #f48430;
+ }
+ .join-detail{
+   background: #f6f6f6;
+   padding: 16px 20px 40px 20px;
+   margin-bottom:40px;
+ }
+ .join-detail h3 {
+   font-size: 24px;
+   font-weight: normal;
+}
+.join-detail .join-us-detail dl{
+  text-align: left;
+  margin-top:20px;
+}
+.join-detail .join-us-detail dl dt{
+  font-size: 18px;
+  color:#3598db;
+}
+.join-detail .join-us-detail dl dt.join-email a{
+  font-size: 14px;
+  color:#f37d24;
+}
+.join-detail .join-us-detail dl dt.join-email a:hover{
+  font-size: 14px;
+  color:#f37d24;
+  text-decoration: underline;
+}
+.join-detail .join-us-detail dl dt.join-email b{
+  color:#333;
+  font-size: 14px;
+}
+.join-detail .join-us-detail dl dd{
+  color:#333;
+  padding-left:35px;
+  line-height: 30px;
+  font-size: 14px;
+}
+.join-sort{
+  border-bottom:4px solid #3598db;
+  margin:30px auto;
+}
+.title-join{
+  float:left;
+  font-size: 18px;
+  color:#333;
+  margin: 10px 40px;
+  font-weight: normal;
+  padding:5px 0;
+  cursor: pointer;
+}
+.join-current{
+  position: relative;
+  color:#3598db;
+}
+.join-current i{
+  position: absolute;
+  bottom:-33px;
+  left:8px;
+  width: 0;
+  height: 0;
+  border-width: 10px;
+  border-color: #3598db transparent transparent;
+  border-style: solid dashed dashed dashed;
+}
+/* join-us-end */
+
+/* contact-map */
+.contact-map{
+    height: 300px;
+}
+.contact-map > div{
+    position: absolute;
+    z-index:1000;
+    opacity:0.7;
+    height: 27px;
+    bottom:0;
+    width: 100%;
+    background-color: black;
+    padding: 3px;
+}
+.contact-map > div > a{
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 40%;
+    color: white;
+}
+/* contact-map-end */

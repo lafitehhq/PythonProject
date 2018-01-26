@@ -1,0 +1,262 @@
+{% extends 'master/layout.html' %}
+
+{% block title %}详细{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/detail.css" />
+{% endblock %}
+
+{% block content %}
+
+    <div class="wrap clearfix">
+        <div class='pb20'>
+            <div class="product-breadcrumb">
+            <div>
+                <a href="/index.html">首页</a>
+                <span>&gt; </span>
+                <a href="/search-0-0-0-0-0-0.html">搜索中心</a>
+                <span> &gt; </span>
+                <span>{{ model.detail.species_standard.species.caption }} {{ model.detail.species_standard.standard.caption }}</span>
+            </div>
+            </div>
+
+            <div class="product-info">
+
+                <div class="info-preview left">
+                    <div id='img-zoomin' class="img-zoomin">
+                        <div id='zoom_small_box' class='small-box'>
+                            <div id="zoom_small_box_mark" class='mark'></div>
+                            <div id='zoom_small_box_floatbox' class='float-box'></div>
+                            <img width='350' height='350' src="/{{ model.detail.img }}" />
+                        </div>
+                        <div id="zoom_big_box" class='big-box'>
+                            <img width='800' height='800' src="/{{ model.detail.big_img }}" />
+                        </div>
+                    </div>
+
+                    <div class="img-option ">
+                        <a class="arrow-left left"><</a>
+                        <ul>
+                            <li>垂标网</li>
+                            <li>垂标网</li>
+                            <li>垂标网</li>
+                            <li>垂标网</li>
+                            <li>垂标网</li>
+                        </ul>
+                        <a class="arrow-right right">></a>
+                    </div>
+
+                </div>
+
+                <div class="info-content left">
+                    <div class='content-product-title'>
+                        <div class="main-title">{{ model.detail.title }}</div>
+                        <div class="extra-title">{{ model.detail.extra_title }}</div>
+                    </div>
+
+                    <div class='content-product left'>
+                        <ul class='summary'>
+                            <li>
+                                <div class='dt'>
+                                    特&nbsp;卖&nbsp;价：
+                                </div>
+                                <div class='dd'>
+                                    <strong class="jred font25">￥ {{ model.detail.price }} /{{ model.detail.get_unit_display }}</strong>
+                                </div>
+                            </li>
+                            <li>
+                                <div class='dt'>
+                                    市&nbsp;场&nbsp;价：
+                                </div>
+                                <div class='dd'>
+                                    <del id="page_maprice">￥{{ model.detail.mark_price }}</del>
+                                </div>
+
+                            </li>
+                            <li>
+                                <div class='dt'>
+                                    规&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格：
+                                </div>
+                                <div class='dd'>
+                                    <div>{{ model.detail.species_standard.standard.caption }}</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class='dt'>
+                                    浏览次数：
+                                </div>
+                                <div class='dd'>
+                                    <div>{{ model.detail.look_count }} 次</div>
+                                </div>
+
+                            </li>
+                        </ul>
+
+                        <ul class='summary'>
+                            {% if model.detail.merchant.product_memo  %}
+                                <li>说明：{{ model.detail.merchant.product_memo }}</li>
+                            {% endif %}
+                        </ul>
+
+                    </div>
+                    <div class='content-merchant right'>
+                        <div class='merchant-container'>
+                            <dl id="seller">
+                                <dt>商户等级：</dt>
+                                <dd>{{ model.detail.merchant.get_merchant_type_display }}</dd>
+                            </dl>
+                            <dl><dt>公司名称：</dt><dd>{{ model.detail.merchant.name }}</dd></dl>
+                            <dl class='no-border-tp'><dt>&nbsp;所在地：</dt><dd>{{ model.detail.merchant.region }}</dd></dl>
+                            <dl class='no-border-tp'>
+                                <dt>联系电话：</dt>
+                                <dd>{{ model.detail.merchant.link_phone }}</dd>
+                                <dd>{{ model.detail.merchant.link_mobile }}</dd>
+                            </dl>
+                            <dl class='no-border-tp'><dt>详细地址：</dt><dd>{{ model.detail.merchant.address }}</dd></dl>
+                            <dl class='no-border-tp'><dt>&nbsp;&nbsp;备注：</dt><dd>{{ model.detail.merchant.memo }}</dd></dl>
+                            <dl class='border-bt'>
+                                <dt style="margin-bottom: 10px;">在线客服：</dt>
+                                <dd>
+                                    {% if model.detail.merchant.qq %}
+                                    <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin={{ model.detail.merchant.qq }}&site=qq&menu=yes">
+                                        <img border="0" src="{{STATIC_URL}}images/qq.png" alt="联系客服" title="联系客服"/></a>
+                                    {% else %}
+                                        <span>无</span>
+                                    {% endif %}
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="product-detail pb20">
+
+                <div  class="guige mt10">
+                    <table class="guige-table">
+                        <tbody><tr>
+                            <th colspan="2" class="title f14">基本信息</th>
+                        </tr>
+                        <tr>
+                            <td class="body-left">材料等级</td>
+                            <td class="body-right">{{ model.detail.material.caption }}</td>
+                        </tr>
+                        <tr>
+                            <td class="body-left">规格</td>
+                            <td class="body-right">{{ model.detail.species_standard.standard.caption }}</td>
+                        </tr>
+                        <tr>
+                            <td class="body-left">表面处理</td>
+                            <td class="body-right">{{ model.detail.surface.caption }}</td>
+                        </tr>
+                        <tr>
+                            <th colspan="2" class="title f14">公司热销（TOP 10）</th>
+                        </tr>
+                        {% for item in model.similar %}
+                            <tr>
+                                <td class="body-left">{{ item.species_standard.species.caption }} {{ item.species_standard.standard.caption }}</td>
+                                <td class="body-right">
+                                    <a href="/detail-{{ item.id }}.html">
+                                        <span style="color: #9d9d9d">[{{ item.material.caption }}]</span>
+                                        <span style="color: #9d9d9d">[{{ item.surface.caption }}]</span>
+                                        -- ￥ {{ item.price }} /{{ item.get_unit_display }}
+                                    </a>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div class="comment-box">
+                    <div class="title">
+                        <a href="javascript:void(0);" data-slash="high">商品详细</a>
+                    </div>
+                    <div class="body">
+                        {% for item in model.images %}
+                            <img width="980px" src="/{{ item.image }}">
+                        {% endfor %}
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+
+
+
+{% block js %}
+
+    <script type="text/javascript">
+
+        $(function(){
+            ZoomIn();
+        });
+
+        function ZoomIn() {
+            var $imgZoomin = document.getElementById("img-zoomin");
+
+            var $smallBox = document.getElementById("zoom_small_box");
+            var $smallBox_mark = document.getElementById("zoom_small_box_mark");
+            var $smallBox_floatbox = document.getElementById("zoom_small_box_floatbox");
+
+            var $bigBox = document.getElementById("zoom_big_box");
+            var $bigBoxImage = $bigBox.getElementsByTagName("img")[0];
+
+            $smallBox_mark.onmouseover = function () {
+                $smallBox_floatbox.style.display = "block";
+                $bigBox.style.display = "block";
+            }
+
+            $smallBox_mark.onmouseout = function () {
+                $smallBox_floatbox.style.display = "none";
+                $bigBox.style.display = "none";
+            }
+
+            $smallBox_mark.onmousemove = function (e) {
+
+                var _event = e || window.event;  //兼容多个浏览器的event参数模式
+
+                var float_box_width = $smallBox_floatbox.offsetWidth;
+                var float_box_height = $smallBox_floatbox.offsetHeight;
+                var float_box_width_half = float_box_width / 2;
+                var float_box_height_half = float_box_height / 2;
+
+                var small_box_width = $imgZoomin.offsetWidth;
+                var small_box_height = $imgZoomin.offsetHeight;
+
+                var mouse_left = _event.clientX + document.body.scrollLeft - $imgZoomin.offsetLeft - float_box_width_half;
+                var mouse_top = _event.clientY + document.body.scrollTop - $imgZoomin.offsetTop - float_box_height_half;
+
+
+
+                if (mouse_left < 0) {
+                    mouse_left = 0;
+                } else if (mouse_left > small_box_width - float_box_width) {
+                    mouse_left = small_box_width - float_box_width;
+                }
+                if (mouse_top < 0) {
+                    mouse_top = 0;
+                } else if (mouse_top > small_box_height - float_box_height) {
+                    mouse_top = small_box_height - float_box_height;
+                }
+
+                $smallBox_floatbox.style.left = mouse_left + "px";
+                $smallBox_floatbox.style.top = mouse_top + "px";
+
+                var percentX = ($bigBoxImage.offsetWidth - $bigBox.offsetWidth) / (small_box_width - float_box_width);
+                var percentY = ($bigBoxImage.offsetHeight - $bigBox.offsetHeight) / (small_box_height - float_box_height);
+
+                $bigBoxImage.style.left = -percentX * mouse_left + "px";
+                $bigBoxImage.style.top = -percentY * mouse_top + "px";
+            }
+        }
+
+
+    </script>
+{% endblock %}
