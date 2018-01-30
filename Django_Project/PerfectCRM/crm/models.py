@@ -31,13 +31,13 @@ class Customer(models.Model):
 
     consult_course = models.ForeignKey("Course",verbose_name="咨询课程")
     content = models.TextField(verbose_name="咨询详情")
-    tags = models.ManyToManyField("Tag",blank=True,null=True)
+    tags = models.ManyToManyField("Tag",blank=True,null=True)  # 标签信息
     status_choices = ((0,'已报名'),
                       (1,'未报名'),
                       )
     status = models.SmallIntegerField(choices=status_choices,default=1)
     consultant = models.ForeignKey("UserProfile")
-    memo = models.TextField(blank=True,null=True)
+    memo = models.TextField(blank=True,null=True)  # 备注
     date = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
@@ -48,7 +48,8 @@ class Customer(models.Model):
         verbose_name_plural ="客户表"
 
 class Tag(models.Model):
-    name = models.CharField(unique=True,max_length=32)
+    '''标签表'''
+    name = models.CharField(unique=True, max_length=32)  # 唯一
 
     def __str__(self):
         return self.name
@@ -59,17 +60,17 @@ class Tag(models.Model):
 
 class CustomerFollowUp(models.Model):
     '''客户跟进表'''
-    customer = models.ForeignKey("Customer")
-    content = models.TextField(verbose_name="跟进内容")
-    consultant = models.ForeignKey("UserProfile")
+    customer = models.ForeignKey("Customer")  # 跟进客户信息：关联客户信息表
+    content = models.TextField(verbose_name="跟进内容")  # 跟进内容：字数不限制
+    consultant = models.ForeignKey("UserProfile")  # 跟进的销售信息：关联销售账户表
 
-    intention_choices  = ((0,'2周内报名'),
-                          (1,'1个月内报名'),
-                          (2,'近期无报名计划'),
-                          (3,'已在其它机构报名'),
-                          (4,'已报名'),
-                          (5,'已拉黑'),
-                          )
+    intention_choices = ((0, '2周内报名'),  # 客户意向信息
+                        (1, '1个月内报名'),
+                        (2, '近期无报名计划'),
+                        (3, '已在其它机构报名'),
+                        (4, '已报名'),
+                        (5, '已拉黑'),
+                         )
     intention = models.SmallIntegerField(choices=intention_choices)
     date = models.DateTimeField(auto_now_add=True)
 

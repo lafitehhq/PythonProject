@@ -81,7 +81,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'PerfectCRM',
         'USER': 'root',
-        'PASSWORD': '123456',
+        # 'PASSWORD': '123456',  # windows密码
+        'PASSWORD': 'qead..8900882',  # mac密码
         'HOST': '127.0.0.1',
         'PORT': '3306',
     }
