@@ -13,16 +13,18 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
-from django.conf.urls import url,include
+from django.conf.urls import url, include
 from django.contrib import admin
 from PerfectCRM import views
 
+admin.autodiscover()
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^crm/', include("crm.urls")),
+    url(r'^crm/', include("crm.urls")),  # 引入crm的App中的urls
     url(r'^$', views.index),
     url(r'^account/login/$', views.acc_login),
-    url(r'^account/logout/$', views.acc_logout,name="acc_logout"),
+    url(r'^account/logout/$', views.acc_logout, name="acc_logout"),
     url(r'^student/', include("student.urls")),
     url(r'^king_admin/', include("king_admin.urls")),
 ]

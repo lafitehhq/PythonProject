@@ -1,6 +1,6 @@
 from django.shortcuts import render,HttpResponse,redirect
-from crm import forms,models
-import string,random
+from crm import forms, models
+import string, random
 from PerfectCRM import settings
 from django.db import IntegrityError
 # Create your views here.
