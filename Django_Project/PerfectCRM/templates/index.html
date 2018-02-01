@@ -35,11 +35,15 @@
   <div class="row">
     <div class="col-sm-3 col-md-2 sidebar">
       <ul class="nav nav-sidebar">
-        {% for  role in request.user.roles.all %}
-          {% for menu in role.menus.all %}
-            <li class=""><a href="{% if menu.url_type == 0 %}{%  url  menu.url_name %} {% else %}{{ menu.url_name }}{% endif %}">{{ menu.name }}</a></li>
+      <!--request.user关联到Django中的用户 UserProfile.roles表示关联到账户（UserProfile）表中的roles字段-->
+      <!--role.menus表示关联角色（Role）表中的menus字段-->
+          {% for  role in request.user.roles.all %}
+            {% for menu in role.menus.all %}
+            <li class="">
+                <a href="{% if menu.url_type == 0 %}{%  url  menu.url_name %} {% else %}{{ menu.url_name }}{% endif %}">{{ menu.name }}</a>
+            </li>
+            {% endfor %}
           {% endfor %}
-        {% endfor %}
 
       </ul>
 

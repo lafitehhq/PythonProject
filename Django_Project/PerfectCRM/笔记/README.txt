@@ -30,13 +30,35 @@ qead..8900882
                 css，js，bootstrapt中的路径都改成/static/**中
            在index.html中精简显示元素：
 
-   2.4.写CRM视图
+   2.4.写销售(CRM)视图
        创建销售的视图：复制\PerfectCRM\urls.py至\PerfectCRM\crm的App中编写销售的方法 ==>
            在主项目中的urls中配置  url(r'^crm/', include("crm.urls"))  表示引用crm中的urls
            在APP中的urls中配置     url(r'^$', views.index, name="sales_index") 表示销售App中的主页面
 
    2.5.用户登录账户显示
-           在index.html中的
+       2.5.1.在\PerfectCRM\crm\models.py中创建菜单表(class Menu),并在角色表(class Role)zhong 建立多对多关系 ==> 在PerfectCRM\crm\admin.py中配置 admin.site.register(models.Menu) ==> makemigrations生成表
+       2.5.2.新建在\PerfectCRM\templates中创建不同角色的文件夹：king_admin，sales，student
+       2.5.3.新建销售首页(sales_index)，学生首页(stu_index)，客户库(customer_list)首页
+       2.5.3.1客户库(customer_list)首页
+            在\PerfectCRM\crm\urls.py中配置 url(r'^customers/$', views.customer_list, name="customer_list")【注意：前端页面关联的别名用customer_list】,  ==> 在\PerfectCRM\crm\views.py 中编写 def customer_list(request)  ==>在\PerfectCRM\templates\sales中新建customers.html ==> 继承index.html【而非静态的base.html文件】 ==> 在\PerfectCRM\templates\index.html中将可变的内容用{% block page-content %}与{% endblock %}框住可变代码  ==> 在customers.html中使用{% block page-content %}与{% endblock %} ==> 登录http://127.0.0.1:8000/crm/customers/查看销售首页显示正常 ==> 在后台中的角色表中添加
+
+       2.5.4. 添加角色所能看的表
+           在后台中的角色表中创建角色--选择角色对应可看的表
+       2.5.5. 用户与角色关联
+           在后台中的用户表中为用户添加角色
+       2.5.6. 角色动态菜单显示
+           在\PerfectCRM\templates\index.html中的<ul></ul>使用标签获取数据库中内容
+
+    2.6.编写动态admin模板app--king_admin
+       2.6.1.创建king_admin的app，在\PerfectCRM\PerfectCRM\settings.py中配置king_app
+       2.6.2.在\PerfectCRM\PerfectCRM\urls.py中配置引入king_admin的App中的urls： url(r'^king_admin/', include("king_admin.urls")),
+
+
+       2.6. 创建自定义标签
+            创建templatetags目录，创建tags.py  ==> 在\PerfectCRM\templates\king_admin\table_index.html中引入自定义标签 {% load tags %} ==> 在
+
+
+
 
 
 

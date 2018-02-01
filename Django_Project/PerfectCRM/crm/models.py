@@ -359,7 +359,7 @@ class UserProfile(AbstractBaseUser, PermissionsMixin):
 
 class Role(models.Model):
     name = models.CharField(max_length=32, unique=True)  # 角色的名称：字符类型，唯一，32字节
-    menus = models.ManyToManyField("Menu", blank=True)
+    menus = models.ManyToManyField("Menu", blank=True)  # 与菜单表建立多对多关系
 
     def __str__(self):
         return self.name
@@ -372,8 +372,8 @@ class Role(models.Model):
 
 class Menu(models.Model):
     name = models.CharField(max_length=32)
-    url_type_choices = ((0,'alias'),(1,'absolute_url'))
-    url_type = models.SmallIntegerField(choices=url_type_choices,default=0)
+    url_type_choices = ((0, 'alias'), (1, 'absolute_url'))
+    url_type = models.SmallIntegerField(choices=url_type_choices, default=0)
     url_name = models.CharField(max_length=64)
 
     def __str__(self):

@@ -4,11 +4,12 @@
 from django import template
 from django.core.exceptions import FieldDoesNotExist
 from django.utils.safestring import mark_safe
-from django.utils.timezone import datetime,timedelta
+from django.utils.timezone import datetime, timedelta
+
 register = template.Library()
 
 @register.simple_tag
-def render_app_name(admin_class):
+def render_app_name(admin_class):  # 渲染名字
     return admin_class.model._meta.verbose_name
 
 @register.simple_tag

@@ -4,7 +4,10 @@ from django.shortcuts import  render,redirect,HttpResponse
 from crm import models
 
 
-enabled_admins = {}
+enabled_admins = {}  # 已开启的admin，是一个空字典
+
+"""基类"""
+
 
 class BaseAdmin(object):
     list_display = []
@@ -44,18 +47,20 @@ class BaseAdmin(object):
         '''用户可以在此进行自定义的表单验证，相当于django form的clean方法'''
         pass
 
+"""客户管理员类"""
+
 class CustomerAdmin(BaseAdmin):
-    list_display = ["id",'qq','name','source','consultant','consult_course','date','status','enroll']
-    list_filters = ['source','consultant','consult_course','status','date']
-    search_fields = ['qq','name',"consultant__name"]
+    list_display = ["id", 'qq', 'name', 'source', 'consultant','consult_course', 'date', 'status', 'enroll']
+    list_filters = ['source', 'consultant', 'consult_course', 'status', 'date']
+    search_fields = ['qq', 'name', "consultant__name"]
     filter_horizontal = ('tags',)
     #model = models.Customer
     list_per_page = 5
     ordering = "qq"
-    readonly_fields = ["qq","consultant","tags"]
-    #readonly_table = True
-    #modelform_exclude_fields = []
-    actions = ["delete_selected_objs","test"]
+    readonly_fields = ["qq", "consultant", "tags"]
+    # readonly_table = True
+    # modelform_exclude_fields = []
+    actions = ["delete_selected_objs", "test"]
     def test(self,request,querysets):
         print("in test",)
     test.display_name  = "测试动作"
@@ -144,20 +149,21 @@ class UserProfileAdmin(BaseAdmin):
     modelform_exclude_fields = ["last_login",]
     filter_horizontal = ("user_permissions","groups")
 
-def register(model_class,admin_class=None):
-    if model_class._meta.app_label not in enabled_admins:
-        enabled_admins[model_class._meta.app_label] = {} #enabled_admins['crm'] = {}
-    #admin_obj = admin_class()
-    admin_class.model = model_class #绑定model 对象和admin 类
-    enabled_admins[model_class._meta.app_label][model_class._meta.model_name] = admin_class
-    #enabled_admins['crm']['customerfollowup'] = CustomerFollowUpAdmin
+
+def register(model_class, admin_class=None):
+    if model_class._meta.app_label not in enabled_admins:  # 若app不存在与字典则添加app名称
+        enabled_admins[model_class._meta.app_label] = {}  # enabled_admins['crm'] = {}
+    # admin_obj = admin_class()
+    admin_class.model = model_class  # 绑定model 对象和admin 类
+    enabled_admins[model_class._meta.app_label][model_class._meta.model_name] = admin_class  # [model_class._meta.app_label]表示App名；[model_class._meta.model_name]表示表名
+    # enabled_admins['crm']['customerfollowup'] = CustomerFollowUpAdmin
 
 
-register(models.Customer,CustomerAdmin)
-register(models.CustomerFollowUp,CustomerFollowUpAdmin)
-register(models.UserProfile,UserProfileAdmin)
-register(models.CourseRecord,CourseRecordAdmin)
-register(models.StudyRecord,StudyRecordAdmin)
+register(models.Customer, CustomerAdmin)
+register(models.CustomerFollowUp, CustomerFollowUpAdmin)
+register(models.UserProfile, UserProfileAdmin)
+register(models.CourseRecord, CourseRecordAdmin)
+register(models.StudyRecord, StudyRecordAdmin)
 
 
 

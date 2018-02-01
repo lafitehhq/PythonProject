@@ -12,7 +12,7 @@ def index(request):
     return render(request,"index.html")
 
 def customer_list(request):
-    return render(request,"sales/customers.html")
+    return render(request, "sales/customers.html")
 
 
 def stu_registration(request,enroll_id,random_str):

@@ -17,7 +17,6 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from PerfectCRM import views
 
-admin.autodiscover()
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -25,6 +24,6 @@ urlpatterns = [
     url(r'^$', views.index),
     url(r'^account/login/$', views.acc_login),
     url(r'^account/logout/$', views.acc_logout, name="acc_logout"),
-    url(r'^student/', include("student.urls")),
-    url(r'^king_admin/', include("king_admin.urls")),
+    url(r'^student/', include("student.urls")),  # 引入student的App中的urls
+    url(r'^king_admin/', include("king_admin.urls")),  # 引入king_admin的App中的urls
 ]
